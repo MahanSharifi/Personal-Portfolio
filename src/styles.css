@@ -1,0 +1,812 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, pre, form, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 25px;
+}
+
+.argument img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    line-height: inherit;
+    -webkit-transition: opacity 0.3s ease-out 1s;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+section {
+    clear: both;
+    overflow: hidden;
+}
+
+/* Rows and Columns */
+
+.argument {
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 75px 0;
+    position: relative;
+}
+
+.no-padding-bottom .argument, .no-padding-bottom div, .no-padding-bottom.argument {
+    padding-bottom: 0;
+}
+
+.no-padding-top.argument, .no-padding-top div {
+    padding-top: 0;
+}
+
+
+/* Targets all elements */
+
+[class*='col-'] {
+    float: left;
+    padding: 20px;
+}
+
+#clients .col-2-3 [class*='col-'] {
+    padding: 0;
+}
+
+/* Clearfix */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Widths */
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+.nav-solid #logo #banner-logo {
+    display: none;
+}
+
+.nav-solid #logo #navigation-logo {
+    display: inline-block;
+}
+
+
+/* --------- Navigation ---------- */
+
+/* Responsive Nav Styling */
+#nav-trigger {
+    display: none;
+    text-align: right;
+}
+
+#nav-trigger span {
+    display: inline-block;
+    width: 38px;
+    height: 95px;
+    color: #111;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-right: 20px;  
+}
+
+#nav-trigger span:after {
+    font-family: "fontAwesome";
+    display: inline-block;
+    width: 38px;
+    height: 71px;
+    line-height: 75px;
+    text-align: center;
+    content: "\f0c9";
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;  
+}
+
+#nav-trigger span.open:after { content: "\f00d"; }
+
+#nav-trigger span:hover, .nav-solid #nav-trigger span.open:hover, .nav-solid #nav-trigger span:hover {
+    opacity: 100;
+}
+
+#nav-trigger span.open, #nav-trigger span.open:hover {
+    color: #111;
+}
+
+nav#nav-mobile {
+    position: relative;
+    display: none;
+}
+
+nav#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+    
+}
+
+nav#nav-mobile ul:after {
+    display: none;
+}
+
+nav#nav-mobile li {
+    margin: 0 20px;
+    float: none;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+    
+}
+
+nav#nav-mobile li:last-child {
+    border-bottom: none;
+}
+
+nav#nav-mobile a {
+    display: block;
+    padding: 12px 0;
+    color: #333;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    display: block;
+    border-bottom: none !important;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-left: 30px;
+}
+
+nav#nav-mobile a:hover {
+    background: #fafafa;
+    opacity: 100;
+}
+
+
+/* --------- 2.6 Images ---------- */
+
+/*Alignment*/
+
+img {
+    vertical-align: top;
+}
+
+.image-center {
+    display: block;
+    margin: 0 auto;
+}
+
+a img {
+    border: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+a img:hover {
+    opacity: 0.7;
+}
+
+h1 {
+    padding: 20px 0;
+}
+
+h2 {
+    padding: 4px 0;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+h4 {
+    padding: 7px 0;
+}
+
+
+/* Text Alignment */
+
+.text-left {
+    text-align: left;
+}
+
+.txt {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Section Headings */
+
+.headSection {
+    padding: 0 0 15px 0;
+}
+
+.aboutSubtitle {
+    font-size: 18px;
+    padding-top: 0;
+}
+
+.headSection h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+}
+
+
+#scrollUp {
+    bottom: 15px;
+    right: 30px;
+    width: 70px;
+    height: 80px;
+    margin-bottom: -10px;   
+    color: transparent;
+    -webkit-transition: margin-bottom 150ms linear 0.06s;
+    -moz-transition: margin-bottom 150ms linear 0.06s;
+    -o-transition: margin-bottom 150ms linear 0.06s;
+    transition: margin-bottom 150ms linear .06s;
+}
+
+#scrollUp:hover {
+    margin-bottom: 0;
+}
+
+#scrollUp:before {
+    background: rgb(0, 0, 0);
+    font-family: "fontawesome";
+    font-size: 2.4em !important;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    content: "\f106";
+    opacity: 100;
+}
+
+
+.container {
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    line-height: 40px;
+    font-weight: lighter;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+}
+
+.container {
+    padding: 2em;
+    grid-gap: 2em;
+}
+
+.quote {
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* Responsive Elements */
+/*------------------------------------------------------------------------------------------*/
+
+/* =Media Queries for Nav
+===============================*/
+
+@media all and (max-width: 1024px) {
+    #nav-trigger {
+        display: block;
+        
+    }
+
+    nav#nav-main {
+        display: none;
+    }
+
+    nav#nav-mobile {
+        display: block;
+    }
+
+    nav#nav-mobile li {
+        display: block;
+    }
+
+    #header aside {
+        display: none;
+    }
+
+    .quote3 {
+        background-color: rgb(255, 255, 255);
+    padding: 0em;
+    border-radius: 0em !important;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
+    margin: 0 !important;
+    width: 100% !important;
+        
+    }
+}
+
+
+/* Landscape mobile & down
+===============================*/
+@media (max-width: 480px) {
+
+    #wrapper {
+        margin:0;
+        padding:0;
+    }
+
+    .page-border, #scrollUp, #scrollUp:before {
+        display:none;
+    }
+    .quote3 {
+        background-color: rgb(255, 255, 255);
+    padding: 0em;
+    border-radius: 0em !important;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
+    margin: 0 !important;
+    width: 100% !important;
+        
+    }
+
+    .argument {
+        padding: 15px !important;
+    }
+
+    .col-1, .col-2, .col-3, .col-2-3, .argument {
+        width: 100%;
+    }
+
+    .col-1, .col-2, .col-3, .col-2-3 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    
+    
+
+
+    /*-----------------Header Elements-----------------*/
+    
+    
+    #header .argument {
+        padding: 0 15px !important;
+    }
+
+    /*Logo*/
+    
+    #logo h2 {
+        padding: 0;
+    }
+
+    /* Social */
+    
+    #header aside {
+        clear: both;
+        padding: 0;
+        
+    }
+
+    #header ul.social-icons {
+        margin-top: 0;
+    }
+
+
+    /*-----------------Sections-----------------*/
+
+    /* Call to Action*/
+    
+    .call-to-action {
+        padding-bottom: 25px;
+    }
+
+    /* Footer */
+    
+    #landing-footer #copyright {
+        float: left;
+        width: 50%;
+    }
+
+    #landing-footer .social-icons {
+        float: right;
+        width: 50%;
+       
+    }
+
+    /*-----------------Typography-----------------*/
+    h1 {
+        font-size: 38px;
+    }
+
+    #navHeader h1 {
+        font-size: 48px;
+    }
+
+    /* Hide Elements */
+    a#scrollUp {
+        display: none !important;
+    }
+
+}
+
+/* Mobile to Tablet Portrait
+===============================*/
+@media (min-width: 480px) and (max-width: 767px) {
+
+    #wrapper {
+        margin:0;
+        padding:0;
+    }
+
+    .page-border, #scrollUp, #scrollUp:before {
+        display:none;
+    }
+    .quote3 {
+        background-color: rgb(255, 255, 255);
+    padding: 0em;
+    border-radius: 0em !important;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
+    margin: 0 !important;
+    width: 100% !important;
+        
+    }
+
+    .argument {
+        padding: 15px 0 !important;
+    }
+
+    .col-1, .col-2, .col-2-3, .col-38, .argument {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 50%;
+    }
+
+
+    /*-----------------Header Elements-----------------*/
+    #header .argument {
+        padding: 0 !important;
+    }
+
+    #header aside {
+        display: inline-block;
+        position: absolute;
+        top:35px;
+        right: 60px;
+        padding-top:3px;
+        padding-right: 5px;
+    }
+
+    .nav-solid .social-icons {
+        display: inline !important;
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        line-height: 0px !important;
+    }
+    .nav-solid aside {
+       
+        margin-top: -13px !important;
+        padding-top: 0px !important;
+        line-height: 0px !important;
+    }
+
+
+    #header aside ul {
+        margin-top: 0 !important;
+        padding-top: px;
+    }
+
+    .nav-solid #logo {
+        margin-top: 10px !important;
+    }
+
+
+    /*Navigation*/
+    nav#nav-mobile ul {
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+
+    /*-----------------Sections-----------------*/
+    /* Footer */
+    #landing-footer #copyright {
+        float: left;
+        width: 50%;
+    }
+
+    #landing-footer .social-icons {
+        float: right;
+        width: 50%;
+        
+    }
+    
+
+}
+
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 768px) and (max-width: 1050px) {
+
+    #wrapper {
+        margin:0;
+        padding:0;
+    }
+
+    .page-border {
+        display:none;
+    }
+
+    .big-padding-top {
+        padding-top: 45px !important;
+    }
+
+    .quote3 {
+        background-color: rgb(255, 255, 255);
+    padding: 0em;
+    border-radius: 0em !important;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) !important;
+    margin: 0 !important;
+    width: 100% !important;
+        
+    }
+
+    /*-----------------Header Elements-----------------*/
+    #header aside {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 60px;
+        padding-top:3px;
+        padding-right: 5px;
+    }
+
+
+    #header aside ul {
+        margin-top: 0 !important;
+        padding-top: 6px;
+    }
+
+    .nav-solid .social-icons {
+        display: inline !important;
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        line-height: 0px !important;
+    }
+    .nav-solid aside {
+       
+        margin-top: -13px !important;
+        padding-top: 0px !important;
+        line-height: 0px !important;
+    }
+    .nav-solid #logo {
+        margin-top: 10px !important;
+    }
+
+    /*Navigation*/
+    nav#nav-mobile ul {
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Website Default Styling */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    background:#fff;
+}
+
+
+/* Default Link Color */
+
+a, .la-ball-triangle-path {
+    color:#669DB3FF;
+}
+
+a:hover, #header.nav-solid nav a:hover {
+    color:#669DB3FF;
+}
+
+
+.iconAbout i {
+    color:#669DB3FF;
+}
+
+/* Border Color */
+
+#navHeader .headSection:before, .testimonial.classic footer:before {
+    background: #020202;
+}
+
+.projBoxContent:hover {
+    border-color:#669DB3FF;
+}
+
+
+#header nav a, #header i {
+    color:#111;
+}
+
+
+#navHeader{ animation: changeBg 20s infinite; }
+@keyframes changeBg{
+   0%,100%  {background-image: url("assets/images/banner-images/banner-image-1.jpg"); background-size:cover;}
+   25% {background-image: url("assets/images/banner-images/banner-image-2.jpg");background-size:cover;}
+   50% {background-image: url("assets/images/banner-images/banner-image-3.jfif");background-size:cover;}
+   75% {background-image: url("assets/images/banner-images/banner-image-4.png");background-size:cover;}
+}
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:15px;
+    font-weight:normal;
+    color:#111;
+}
+
+#navHeader h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:62px;
+    line-height:60px;
+    font-weight:800;
+    color:#111;
+}
+
+#navHeader h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:18px;
+    font-weight:300;
+    color:#111;
+}
+
+.aboutTitle {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:700;
+    color:#111;
+}
+
+.aboutSubtitle {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    font-weight:300;
+    color:#9c9c9c;
+}
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 40px; 
+    font-weight:300;
+    color:#111;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:300;
+    color:#111;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 30px; 
+    font-weight:700;
+    color:#111;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight:400;
+    color:#111;
+}
+
+
+#landing-footer, #landing-footer p, #landing-footer a {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:12px;
+    font-weight:normal;
+    color:#999;
+}

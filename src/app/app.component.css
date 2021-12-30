@@ -1,0 +1,41 @@
+.FrontPageBorder {
+    position: fixed;
+    z-index: 999999;
+}
+
+
+
+.FrontPageBorder .FrontPageBottomBorder, .FrontPageBorder .FrontPageLeftBorder, .FrontPageBorder .FrontPageRightBorder, .FrontPageBorder .FrontPageTopBorder {
+    position: fixed;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.897);
+}
+
+.FrontPageBorder > .FrontPageTopBorder, .FrontPageBorder > .FrontPageRightBorder, .FrontPageBorder > .FrontPageBottomBorder, .FrontPageBorder > .FrontPageLeftBorder {
+    padding: 10px;
+}
+
+.FrontPageBottomBorder, .FrontPageTopBorder {
+    width: 100%;
+    padding: 10px;
+}
+
+.FrontPageLeftBorder, .FrontPageRightBorder {
+    padding: 10px;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.FrontPageBorder .FrontPageTopBorder { top: 0; }
+.FrontPageBorder .FrontPageRightBorder { right: 0; }
+.FrontPageBorder .FrontPageBottomBorder { bottom: 0; }
+.FrontPageBorder .FrontPageLeftBorder { left: 0; }
+
+#wrapper {
+    margin:0 10px;
+    padding: 10px 0;
+    position: relative;
+    background-color: white;
+}
+
+

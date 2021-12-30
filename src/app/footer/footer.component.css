@@ -1,0 +1,19 @@
+#foot-bottom {
+    clear: both;
+}
+
+#foot-bottom .argument {
+    padding: 0;
+}
+
+#foot-bottom p {
+    margin: 0;
+}
+
+#foot-bottom ul {
+    list-style: none;
+}
+
+#foot-bottom li {
+    display: inline-block;
+}

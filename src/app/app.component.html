@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<div class="FrontPageBorder" data-wow-duration="1.7s" data-wow-delay="1.2s">
+      <div class="FrontPageTopBorder animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+      <div class="FrontPageRightBorder  animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+      <div class="FrontPageBottomBorder animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+      <div class="FrontPageLeftBorder  animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+<div id="mazzie">
+    <div id="wrapper">
+        <main id="content">
+            <router-outlet (activate)="onActivate()" ><app-header-main></app-header-main></router-outlet>
+            <app-footer></app-footer>
+        </main>
+    </div>
+</div>

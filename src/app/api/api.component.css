@@ -1,0 +1,32 @@
+.section-title {
+    margin-left: 50%;
+}
+
+button {
+    margin-left: 50%; 
+}
+
+p {
+    margin-left: 20px;
+}
+
+aside {
+    font-style: italic;
+}
+
+.container2 {
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    line-height: 40px;
+    font-weight: lighter;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.argument{ animation: changeab 20s infinite; }
+@keyframes changeab{
+   0%,100%  {background-color: white; }
+    25% {background-color: aliceblue;}
+   50% {background-color: azure;}
+   75% {background-color: rgba(220, 245, 255, 0.932)}
+}

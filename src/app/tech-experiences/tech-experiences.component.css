@@ -1,0 +1,82 @@
+button {
+    display: relative;
+    background-color: rgb(55, 49, 59);
+    color: white;
+}
+#button2 {
+  background-color: white !important;
+  color: black;
+}
+
+
+
+
+h4 {
+  color: white;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(55, 49, 59);
+    color: white;
+    
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 10px 16px; color: black;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 10px 16px;
+    background-color: rgb(55, 49, 59);
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    color: #fefefe;
+  }
+
+  .quote:hover {
+    opacity: 30%;
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -800px; opacity: 0}
+    to {top: 0px; opacity: 1}
+  }
+
+  .container2 .quote {
+    margin-left: 30px !important;
+    margin-bottom: 20px;
+  }
+
+
+
+.container2 {
+  z-index: 2;
+  background: rgb(255, 255, 255);
+  line-height: 40px;
+  font-weight: lighter;
+  padding: 40px;
+  color: rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+}
+
+.container2 {
+  padding: 2em;
+  grid-gap: 2em;
+  padding-top:10em;
+
+}
