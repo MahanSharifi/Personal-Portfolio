@@ -1,0 +1,72 @@
+.container2 {
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    line-height: 40px;
+    font-weight: lighter;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+}
+
+.container2 {
+    padding: 2em;
+    grid-gap: 2em;
+    padding-top:10em;
+}
+
+.social-icons span {
+    display: none;
+}
+
+.social-icons a i:hover
+{
+    color: #fff !important;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}
+
+/*  */
+.social-icons li a {
+    position:relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    color: rebeccapurple;
+}
+
+/*  */
+.social-icons li a:hover {
+    transform: translate(0, -10px);
+}
+
+/*  */
+.social-icons li:nth-child(1) a:hover{
+    background-color: #171515;
+    
+}
+/*  */
+.social-icons li:nth-child(2) a:hover{
+    background-color: #0077B5;
+}

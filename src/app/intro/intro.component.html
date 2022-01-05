@@ -1,24 +1,22 @@
 <router-outlet>
 <section id="about" class="container txt scrollto"> 
     <div class="argument clearfix">
-        <div class="col-3">
+        <div class="col-about">
             <div>
                 <h3>{{title.titleText}}</h3>
                 <h2 class="aboutTitle">{{title.titleHeader}}</h2>
-                <p class="aboutSubtitle"></p>
                 <p> I aspire to be a creative software developer as technology has been a passion of mine since I can remember and I love working backend and frontend. I am motivated to continue learning and expanding my repertoire.
                 <br>
                 <br>
-                I enjoy coding, playing soccer, and hanging out with my friends in my free time.
+                I enjoy coding, playing soccer, and hanging out with my family and friend in my free time.
                 <br> 
                 <br>
                 For my resume, please contact me via any of the social icons above, or email.
-            </p>
+                </p>
             </div>
         </div>
-
-        <div class="col-2-3">
-            <div class="col-2 wow fadeInUp quote3" data-wow-delay="0.1s">
+        <div class="col-about-content">
+            <div class="col-content wow fadeInUp quote3" data-wow-delay="0.1s">
                 <div class="iconAbout">
                     <i class="fas fa-university fa-2x"></i>
                 </div>
@@ -27,10 +25,7 @@
                     <p>{{University.about}}</p>
                 </div>
             </div>
-
-            
-        
-            <div class="col-2 wow fadeInUp quote3" data-wow-delay="0.3s">
+            <div class="col-content wow fadeInUp quote3" data-wow-delay="0.3s">
                 <div class= "iconAbout">
                     <i class="fas fa-toolbox fa-2x"></i>
                 </div>
@@ -39,22 +34,17 @@
                     <p>{{tools.about}}</p>
                 </div>
             </div>
-
-
-            <div class="col-2 wow fadeInUp quote3" data-wow-delay="0.5s">
+            <div class="col-content wow fadeInUp quote3" data-wow-delay="0.5s">
                 <div class="iconAbout">
                     <i class="fas fa-microchip fa-2x"></i>
                 </div>
                 <div>
                     <h4>{{freeTime.title}}</h4>
                     <p>Sep. 2021 -> Dec. 2021</p>
-                    <p>{{freeTime.about}} <br> CLICK ME</p>
-                    
+                    <p>{{freeTime.about}} <br> <a routerLink="/TECH">CLICK ME</a></p>
                 </div>
             </div>
-
-
-            <div class="col-2 wow fadeInUp quote3" data-wow-delay="0.5s">
+            <div class="col-content wow fadeInUp quote3" data-wow-delay="0.5s">
                 <div class="iconAbout">
                     <i class="fas fa-code fa-2x"></i>
                 </div>
@@ -63,9 +53,6 @@
                     <p>{{lang.about}}</p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-
-<!--End of Introduction-->

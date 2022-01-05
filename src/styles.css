@@ -65,13 +65,9 @@ section {
     padding: 20px;
 }
 
-#clients .col-2-3 [class*='col-'] {
-    padding: 0;
-}
-
 /* Clearfix */
 
-.clearfix:after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -79,27 +75,27 @@ section {
 
 /* Main Widths */
 
-.col-1 {
+.col-nav {
     width: 100%;
 }
 
-.col-2 {
+.col-content {
     width: 50%;
 }
 
-.col-3 {
+.col-about {
     width: 33.33%;
 }
 
-.col-2-3 {
+.col-about-content {
     width: 66.66%;
 }
 
-.nav-solid #logo #banner-logo {
+.nav-solid #logo #first-logo {
     display: none;
 }
 
-.nav-solid #logo #navigation-logo {
+.nav-solid #logo #second-logo {
     display: inline-block;
 }
 
@@ -107,12 +103,12 @@ section {
 /* --------- Navigation ---------- */
 
 /* Responsive Nav Styling */
-#nav-trigger {
+#nav-box {
     display: none;
     text-align: right;
 }
 
-#nav-trigger span {
+#nav-box span {
     display: inline-block;
     width: 38px;
     height: 95px;
@@ -130,7 +126,7 @@ section {
     margin-right: 20px;  
 }
 
-#nav-trigger span:after {
+#nav-box span:after {
     font-family: "fontAwesome";
     display: inline-block;
     width: 38px;
@@ -142,22 +138,22 @@ section {
     border-top-left-radius: 5px;  
 }
 
-#nav-trigger span.open:after { content: "\f00d"; }
+#nav-box span.open:after { content: "\f00d"; }
 
-#nav-trigger span:hover, .nav-solid #nav-trigger span.open:hover, .nav-solid #nav-trigger span:hover {
+#nav-box span:hover, .nav-solid #nav-box span.open:hover, .nav-solid #nav-box span:hover {
     opacity: 100;
 }
 
-#nav-trigger span.open, #nav-trigger span.open:hover {
+#nav-box span.open, #nav-box span.open:hover {
     color: #111;
 }
 
-nav#nav-mobile {
+nav#nav-content-pages {
     position: relative;
     display: none;
 }
 
-nav#nav-mobile ul {
+nav#nav-content-pages ul {
     display: none;
     list-style-type: none;
     position: absolute;
@@ -173,11 +169,11 @@ nav#nav-mobile ul {
     
 }
 
-nav#nav-mobile ul:after {
+nav#nav-content-pages ul:after {
     display: none;
 }
 
-nav#nav-mobile li {
+nav#nav-content-pages li {
     margin: 0 20px;
     float: none;
     text-align: left;
@@ -185,11 +181,11 @@ nav#nav-mobile li {
     
 }
 
-nav#nav-mobile li:last-child {
+nav#nav-content-pages li:last-child {
     border-bottom: none;
 }
 
-nav#nav-mobile a {
+nav#nav-content-pages a {
     display: block;
     padding: 12px 0;
     color: #333;
@@ -205,7 +201,7 @@ nav#nav-mobile a {
     margin-left: 30px;
 }
 
-nav#nav-mobile a:hover {
+nav#nav-content-pages a:hover {
     background: #fafafa;
     opacity: 100;
 }
@@ -380,7 +376,7 @@ h4 {
 ===============================*/
 
 @media all and (max-width: 1024px) {
-    #nav-trigger {
+    #nav-box {
         display: block;
         
     }
@@ -389,11 +385,11 @@ h4 {
         display: none;
     }
 
-    nav#nav-mobile {
+    nav#nav-content-pages {
         display: block;
     }
 
-    nav#nav-mobile li {
+    nav#nav-content-pages li {
         display: block;
     }
 
@@ -439,11 +435,11 @@ h4 {
         padding: 15px !important;
     }
 
-    .col-1, .col-2, .col-3, .col-2-3, .argument {
+    .col-nav, .col-content, .col-about, .col-about-content, .argument {
         width: 100%;
     }
 
-    .col-1, .col-2, .col-3, .col-2-3 {
+    .col-nav, .col-content, .col-about, .col-about-content {
         padding-right: 0;
         padding-left: 0;
     }
@@ -541,11 +537,11 @@ h4 {
         padding: 15px 0 !important;
     }
 
-    .col-1, .col-2, .col-2-3, .col-38, .argument {
+    .col-nav, .col-content, .col-about-content, .col-Head, .argument {
         width: 100%;
     }
 
-    .col-3 {
+    .col-about {
         width: 50%;
     }
 
@@ -589,7 +585,7 @@ h4 {
 
 
     /*Navigation*/
-    nav#nav-mobile ul {
+    nav#nav-content-pages ul {
         margin-left: -40px;
         margin-right: -40px;
         padding-left: 20px;
@@ -674,7 +670,7 @@ h4 {
     }
 
     /*Navigation*/
-    nav#nav-mobile ul {
+    nav#nav-content-pages ul {
         margin-left: -40px;
         margin-right: -40px;
         padding-left: 20px;

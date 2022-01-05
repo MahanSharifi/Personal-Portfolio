@@ -15,7 +15,7 @@ export class ApiComponent implements OnInit {
   constructor(public apiService: GetApiService) { }
 
   ngOnInit(): void {
-    //this.getApi();
+    this.getApi();
   }
 
   getApi(): any {

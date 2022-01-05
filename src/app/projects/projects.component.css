@@ -26,8 +26,7 @@
     padding: 25px;
     position: relative;
     min-height: 400px;
-    
-
+    color: rebeccapurple;
 }
 
 .projContent p {
@@ -42,14 +41,13 @@
     padding: 10px;
     position: relative; 
     background-color: rebeccapurple;
-    width: 50%;
-    margin-left: 50%;
+    width: 100%;
+    margin-left: 0%;
 }
 
 .gitHub a {
     color: azure;
 }
-
 
 .cont {
     display: inline-block;
