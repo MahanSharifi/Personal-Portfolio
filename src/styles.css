@@ -43,7 +43,6 @@ section {
 /* Rows and Columns */
 
 .argument {
-    max-width: 1245px;
     margin: 0 auto;
     padding: 75px 0;
     position: relative;
@@ -363,9 +362,18 @@ h4 {
 
 
 
+@media (min-width: 1800px) and (max-width: 2224px) {
 
+.headSection h2:after {
+    background:#000000;
+    content:"";
+    display:block;
+    width:30px;
+    height:5px;
+    margin-top: 350px;
+}
 
-
+}
 
 
 /*------------------------------------------------------------------------------------------*/
@@ -378,7 +386,6 @@ h4 {
 @media all and (max-width: 1024px) {
     #nav-box {
         display: block;
-        
     }
 
     nav#nav-main {
@@ -406,6 +413,16 @@ h4 {
     width: 100% !important;
         
     }
+    .headSection h2:after {
+        background:#000000;
+        content:"";
+        display:block;
+        width:30px;
+        height:5px;
+        margin-top:30px;
+    }
+
+    
 }
 
 
@@ -509,6 +526,15 @@ h4 {
         display: none !important;
     }
 
+    .headSection h2:after {
+        background:#000000;
+        content:"";
+        display:block;
+        width:30px;
+        height:5px;
+        margin-top:30px;
+    }
+
 }
 
 /* Mobile to Tablet Portrait
@@ -607,6 +633,14 @@ h4 {
         
     }
     
+    .headSection h2:after {
+        background:#000000;
+        content:"";
+        display:block;
+        width:30px;
+        height:5px;
+        margin-top:30px;
+    }
 
 }
 
@@ -675,6 +709,14 @@ h4 {
         margin-right: -40px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .headSection h2:after {
+        background:#000000;
+        content:"";
+        display:block;
+        width:30px;
+        height:5px;
+        margin-top:30px;
     }
 }
 

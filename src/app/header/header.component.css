@@ -19,15 +19,8 @@
     transform: translate(0, -10px);
 }
 
-/*
-.headSection h2:after {
-    background:#000000;
-    content:"";
-    display:block;
-    width:30px;
-    height:5px;
-    margin-top:30px;
-}
+
+
 
 .headSection h1:before{
     background:#000000;
@@ -36,5 +29,6 @@
     width:30px;
     height:5.3px;
     margin-bottom:30px;
-}*/
+}
+
 
