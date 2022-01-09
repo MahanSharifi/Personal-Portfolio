@@ -1,5 +1,7 @@
 #foot-bottom {
     clear: both;
+    background-color: black;
+    color: aliceblue;
 }
 
 #foot-bottom .argument {

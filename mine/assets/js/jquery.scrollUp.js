@@ -1,3 +1,5 @@
+// Developed by Mark Goodyear 2013
+// https://markgoodyear.com/2013/01/scrollup-jquery-plugin/
 (function ($, window, document) {
     'use strict';
 

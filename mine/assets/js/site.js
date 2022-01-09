@@ -12,22 +12,22 @@ $(document).ready(function () {
 	}
 
 	/*Responsive Navigation*/
-	$("#nav-mobile").html($("#nav-main").html());
-	$("#nav-trigger span").on("click",function() {
-		if ($("nav#nav-mobile ul").hasClass("expanded")) {
-			$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+	$("#nav-content-pages").html($("#nav-main").html());
+	$("#nav-box span").on("click",function() {
+		if ($("nav#nav-content-pages ul").hasClass("expanded")) {
+			$("nav#nav-content-pages ul.expanded").removeClass("expanded").slideUp(250);
 			$(this).removeClass("open");
 		} else {
-			$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+			$("nav#nav-content-pages ul").addClass("expanded").slideDown(250);
 			$(this).addClass("open");
 		}
 	});
 
-	$("#nav-mobile").html($("#nav-main").html());
-	$("#nav-mobile ul a").on("click",function() {
-		if ($("nav#nav-mobile ul").hasClass("expanded")) {
-			$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-			$("#nav-trigger span").removeClass("open");
+	$("#nav-content-pages").html($("#nav-main").html());
+	$("#nav-content-pages ul a").on("click",function() {
+		if ($("nav#nav-content-pages ul").hasClass("expanded")) {
+			$("nav#nav-content-pages ul.expanded").removeClass("expanded").slideUp(250);
+			$("#nav-box span").removeClass("open");
 		}
 	});
 
