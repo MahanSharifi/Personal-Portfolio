@@ -26,6 +26,7 @@ export class IntroComponent implements OnInit {
 
   freeTime = {
     title: '',
+    date: '',
     about: ''
   };
 
@@ -33,6 +34,12 @@ export class IntroComponent implements OnInit {
     title: '',
     about: ''
   };
+
+  content = {
+    data1: '',
+    data2: '',
+    data3: ''
+  }
 
 
   
@@ -44,6 +51,7 @@ export class IntroComponent implements OnInit {
     this.tools = this.config.getConfig().tools;
     this.freeTime = this.config.getConfig().freeTime;
     this.lang = this.config.getConfig().lang;
+    this.content = this.config.getConfig().content;
   }
 
 }

@@ -13,9 +13,7 @@ import { ConfigService } from './config.service';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { LEDDiceComponent } from './leddice/leddice.component';
-import { JsonParserComponent } from './json-parser/json-parser.component';
 import { BiquadrisComponent } from './biquadris/biquadris.component';
-import { VolunteeringComponent } from './volunteering/volunteering.component';
 import { VBACalcComponent } from './vba-calc/vba-calc.component';
 import { TechExperiencesComponent } from './tech-experiences/tech-experiences.component';
 import { ApiComponent } from './api/api.component';
@@ -36,9 +34,7 @@ import { ProjectsComponent } from './projects/projects.component';
     HeaderMainComponent,
     ContactComponent,
     LEDDiceComponent,
-    JsonParserComponent,
     BiquadrisComponent,
-    VolunteeringComponent,
     VBACalcComponent,
     TechExperiencesComponent,
     ApiComponent,

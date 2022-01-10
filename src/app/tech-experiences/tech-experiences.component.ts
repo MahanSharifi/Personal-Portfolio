@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-tech-experiences',
@@ -48,9 +49,56 @@ export class TechExperiencesComponent implements OnInit {
   onCloseHandled4() {
     this.display4 = "none";
   }
-  constructor() { }
+
+  tech = {
+    title: '',
+    sub: ''
+  }
+
+  coop = {
+    title: '',
+    contentA: '',
+    contentB: '',
+    contentC: '',
+    contentD: '',
+    date: ''
+  }
+
+  youth = {
+    title: '',
+    date: '',
+    content: ''
+  }
+
+  robot = {
+    title: '',
+    date: '',
+    content: ''
+  }
+  
+  deca = {
+    title: '',
+    date: '',
+    content: '',
+    contentB: '',
+    contentC: ''
+  }
+
+  football = {
+    title: '',
+    date: '',
+    content: ''
+  }
+
+  constructor( public config: ConfigService ) { }
 
   ngOnInit(): void {
+    this.coop = this.config.getConfig().coop;
+    this.tech = this.config.getConfig().tech;
+    this.youth = this.config.getConfig().youth;
+    this.robot = this.config.getConfig().robot;
+    this.deca = this.config.getConfig().deca;
+    this.football = this.config.getConfig().football;
   }
 
 }

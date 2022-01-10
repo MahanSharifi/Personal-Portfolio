@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-biquadris',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BiquadrisComponent implements OnInit {
 
-  constructor() { }
+  biq = {
+    title:'',
+    date:'',
+    contentA:'',
+    contentB:'',
+    contentC:'',
+    contentD:'',
+    caption:''
+  }
+  
+  constructor( public config: ConfigService ) { }
 
   ngOnInit(): void {
+    this.biq = this.config.getConfig().biq;
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-vba-calc',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VBACalcComponent implements OnInit {
 
-  constructor() { }
+  vb = {
+    title: '',
+    date: '',
+    contentA: '',
+    contentB: '',
+    contentC: '',
+    caption: ''
+  }
+  
+  constructor( public config: ConfigService ) { }
 
   ngOnInit(): void {
+    this.vb = this.config.getConfig().vb;
   }
 
 }

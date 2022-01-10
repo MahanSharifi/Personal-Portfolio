@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-leddice',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LEDDiceComponent implements OnInit {
 
-  constructor() { }
+  dice = {
+    title:'',
+    date:'',
+    contentA:'',
+    caption:''
+  }
+
+  constructor( public config: ConfigService ) { }
 
   ngOnInit(): void {
+    this.dice = this.config.getConfig().dice;
   }
 
 }

@@ -7,7 +7,6 @@ import { BiquadrisComponent } from './biquadris/biquadris.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
-import { JsonParserComponent } from './json-parser/json-parser.component';
 import { LEDDiceComponent } from './leddice/leddice.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TechExperiencesComponent } from './tech-experiences/tech-experiences.component';
@@ -76,10 +75,6 @@ const routes: Routes = [
   { 
     path: 'VBA', 
     component: VBACalcComponent
-  },
-  { 
-    path: 'JSONParser', 
-    component: JsonParserComponent
   },
   { 
     path: 'Biquadris', 
