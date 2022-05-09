@@ -1,5 +1,9 @@
-.col-Head {
-    width: 38.2% !important;
+.coll-Head {
+    width: 50% !important;
+    text-align: center !important;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
 }
 
 .button {
@@ -20,10 +24,16 @@
 }
 
 
+[class*='coll-'] {
+    text-align: center;
+   
 
+    
+  
+}
 
 .headSection h1:before{
-    background:#000000;
+    background:rebeccapurple;
     content:"";
     display:block;
     width:30px;
@@ -31,4 +41,30 @@
     margin-bottom:30px;
 }
 
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rebeccapurple }
+  }
 

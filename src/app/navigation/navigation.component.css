@@ -72,6 +72,6 @@ li {
 
 
 #nav-main .active { 
-    color: rgb(55, 49, 59) !important ;
+    color: rebeccapurple !important ;
     text-decoration: underline 5px;
 }

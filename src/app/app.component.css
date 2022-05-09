@@ -5,10 +5,12 @@
 
 
 
-.FrontPageBorder .FrontPageBottomBorder, .FrontPageBorder .FrontPageLeftBorder, .FrontPageBorder .FrontPageRightBorder, .FrontPageBorder .FrontPageTopBorder {
+.FrontPageBorder .FrontPageBottomBorder, .FrontPageBorder .FrontPageLeftBorder, .FrontPageBorder .FrontPageRightBorder {
     position: fixed;
     z-index: 9999;
     background: rgba(255, 255, 255, 0.897);
+    
+    
 }
 
 .FrontPageBorder > .FrontPageTopBorder, .FrontPageBorder > .FrontPageRightBorder, .FrontPageBorder > .FrontPageBottomBorder, .FrontPageBorder > .FrontPageLeftBorder {
@@ -23,7 +25,7 @@
 .FrontPageLeftBorder, .FrontPageRightBorder {
     padding: 10px;
     height: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .FrontPageBorder .FrontPageTopBorder { top: 0; }
@@ -38,4 +40,8 @@
     background-color: white;
 }
 
+.FrontPageTopBorder {
+    color: white;
+    opacity: 900000% !important;
+}
 
