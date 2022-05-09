@@ -320,6 +320,9 @@ h6 a {
 }
 
 
+
+
+
 @media (min-width: 1800px) and (max-width: 2224px) {
     .headSection h2:after {
         background:#000000;
@@ -329,6 +332,9 @@ h6 a {
       height:5px;
       margin-top: 350px;
     }
+    
+
+    
 }
 
 @media all and (max-width: 1024px) {
@@ -362,8 +368,13 @@ h6 a {
 }
 
 
+
 @media (max-width: 480px) {
 
+    .headSection h1  {
+        font-size: 15px !important;   
+    }
+    
     #wrapper {
         margin:0;
         padding:0;
@@ -411,7 +422,7 @@ h6 a {
     }
 
     .headSection h2:after {
-        background:#000000;
+        background:rebeccapurple;
         content:"";
         display:block;
         width:30px;
@@ -424,6 +435,10 @@ h6 a {
 
 @media (min-width: 480px) and (max-width: 767px) {
 
+   
+    .headSection h1  {
+        font-size: 25px !important;   
+    }
     #wrapper {
         margin:0;
         padding:0;
@@ -444,7 +459,7 @@ h6 a {
 
     .col-nav, .col-content, .col-about-content, .col-Head, .argument { width: 100%; }
 
-    .col-about { width: 50%; }
+    .col-about { width: 100%; }
 
     #header .argument { padding: 0 !important; }
 
@@ -486,7 +501,7 @@ h6 a {
     }
     
     .headSection h2:after {
-        background:#000000;
+        background:rebeccapurple;
         content:"";
         display:block;
         width:30px;
@@ -496,8 +511,11 @@ h6 a {
 }
 
 
-@media (min-width: 768px) and (max-width: 1050px) {
+@media (min-width: 768px) and (max-width: 1020px) {
 
+    .headSection h1  {
+        font-size: 38px !important;   
+    } 
     #wrapper {
         margin:0;
         padding:0;
@@ -549,7 +567,7 @@ h6 a {
     }
 
     .headSection h2:after {
-        background:#000000;
+        background:rebeccapurple;
         content:"";
         display:block;
         width:30px;
@@ -651,4 +669,12 @@ h4 {
     font-size: 18px; 
     font-weight:400;
     color:#111;
+}
+
+
+@media (min-width: 1020px) and (max-width: 1100px) {
+
+    .headSection h1  {
+        font-size: 3em !important;   
+    } 
 }
