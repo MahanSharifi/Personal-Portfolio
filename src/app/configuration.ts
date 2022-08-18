@@ -1,7 +1,7 @@
 export const configuration = {
       header: {
         heading: 'Mahan Sharifi',
-        headingText: 'Full Stack Software Developer'
+        headingText: 'Software Developer'
       },
       title: {
         titleText:'Mahan Sharifi-Ghazvini',
@@ -9,16 +9,15 @@ export const configuration = {
       },
       University: {
         title: 'University',
-        about: 'Computer Science @ The University of Waterloo. I am currently in my 2B term.'
+        about: '3A Computer Science Student @ The University of Waterloo.'
       },
       tools: {
         title: 'Tools',
-        about: 'Git, GitHub, Azure DevOps, VS, VSCode, SQL Server, Agile Methodoligies, Rapid API, BASH SHELL'
+        about: 'Git, BASH, Linux, Angular, MSS (SQL), VS, VSCode, Rapid API, Dapper'
       },
       freeTime: {
-        title: 'Software Developer CO-OP @ Teranet',
-        date: 'Sep. 2021 -> Dec. 2021',
-        about: 'Developed, wrote, and tested a variety of code. For More Information,'
+        title: 'Freetime !!!',
+        about: 'I love soccer. I played for Kitchener TFC Academy from u13 - u18 and theres nothing like it.'
       },
       lang: {
         title: 'Languages',
@@ -38,11 +37,11 @@ export const configuration = {
         data: 'Please reach out to me via any of the social platforms or'
       },
       foot: {
-        f: 'Mahan Sharifi-Ghazvin 2021'
+        f: 'Mahan Sharifi-Ghazvini 2022'
       },
       content: {
-        data1: 'I aspire to be a creative software developer as technology has been a passion of mine since I can remember and I love working backend and frontend. I am motivated to continue learning and expanding my repertoire.',
-        data2: 'I enjoy coding, playing soccer, and hanging out with my family and friend in my free time.',
+        data1: 'HEY! I enjoy playing soccer, and hanging out with my family and friends.',
+        data2: 'I am motivated to continue learning and expanding my repertoire.',
         data3: 'For my resume, please contact me via any of the social icons above, or email.'
       },
       dice: {
@@ -91,7 +90,7 @@ export const configuration = {
         contentB: 'Implemented cases to increase efficiency in code.'
       },
       tech:  {
-        title: 'Tech/Volunteer Experiences',
+        title: 'Internships',
         sub: 'click any of the following below'
       },
       coop: {
@@ -131,5 +130,9 @@ export const configuration = {
         contentB: 'How it works: User picks the function they need and input values in the specific boxes. By clicking a button, the values of each point in the transformation, inverse and other forms of the equation are presented to the user. A graph is also formed to allow the user to understand the image of the function clearly.',
         contentC: 'Further improvments: Currently working on implementing Epsilon defintions and limits within a new sheet. ',
         caption: 'Photo: VBA reciprocal code, Quadratic, Radical, and Recirocal sheet'
+      },
+      uptake: {
+        title: 'Full Stack Developer @ Uptake Canada',
+        date: 'Summer 2022'
       }
   };

@@ -21,6 +21,8 @@ import { GetApiService } from './get-api.service';
 import {HttpClientModule} from '@angular/common/http'
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ProjectsComponent } from './projects/projects.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
+
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import { ProjectsComponent } from './projects/projects.component';
     TechExperiencesComponent,
     ApiComponent,
     ProjectsComponent,
+    VolunteerComponent,
   ],
   imports: [
     BrowserModule,

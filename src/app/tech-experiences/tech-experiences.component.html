@@ -1,92 +1,123 @@
 <div id="TECH" class="container2 txt">
       <h1>{{tech.title}}</h1>
       <h6>{{tech.sub}}</h6>
-      <div class="modal2"  [ngStyle]="{'display':display0}">
-            <div class="modal-dialog" >
-                  <div class="modal-content">
-                        <div class="modal-header">
-                              <h4 class="modal-title">{{coop.title}}<br> {{coop.date}}</h4>
-                              <button type="button" class="close" aria-label="Close" (click)="onCloseHandled0()"><span aria-hidden="true">&times;</span></button>
-                         </div>
-                   <div class="modal-body">
-                              <p>
-                                    {{coop.contentA}}<br>
-                                    {{coop.contentB}} <br>
-                                    {{coop.contentC}}<br>
-                                    {{coop.contentD}}
-                              </p>
-                   </div>
-                        <div class="modal-footer"></div>
-                   </div>
-             </div>
-        </div>
-          <button  id="button2" class="quote wow animate__animated animate__pulse" data-wow-delay="0.4s" type="button" (click)="openModal0()">{{coop.title}}<br> {{coop.date}}</button>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="gooey">
+                    <!-- in="sourceGraphic" -->
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                    <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
+      
+        <button id="gooey-button" class="quote wow animate__animated animate__pulse"(click)="toggleDisplay()">
+            {{uptake.title}}<br> {{uptake.date}}
+            <span class="bubbles">
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                
+            </span>
+        </button>
+      
+      
+  
+           
+      <div [hidden]="displayed" class="modalNew">
+            <button type="button" class="close" aria-label="Close" (click)="toggleDisplay()"><span aria-hidden="true">&times;</span></button>
+            <article class="pages">
+                  <div class="quote right">
+                              <div class="containerHalf">
+                                    <div class="DLP">
+                                          <h1>Uptake Canada</h1>
+                                          <h4>May 2022 -> Sept 2022</h4>
+                                          
+                                          <p>Tools: SQL, C#, Angular, .NET </p>
+
+                                          
+                                          
+                                      </div>
+                                      
+                                          
+                              </div>
+                  </div>
+
+                  <div class="left">
+                        <div class="containerLeft">
+                            <h2>Full Stack Developer</h2>
+                            <li>Developing and maintianing SQL objects, especially stored procedures.</li>
+                            <li>Creating Get/Post API Endpoints.</li>
+                            <li>Enhancements via angular and C++ for SPA.</li>
+                            <h4>For more information please contact me for my resume.</h4>
+                        </div>
+                  </div>
+            </article>
+      </div>
+         
+
+      <button id="gooey-button2" (click)="toggleDisplay2()" [ngStyle]="{'background-color' : displayed ? '#90EE90' :'#90EE90'}" class="quote wow animate__animated animate__pulse">
+            {{coop.title}} <br> {{coop.date}}
+            <span class="bubbles2">
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                
+            </span>
+        </button>
+      
+
+      <div [hidden]="displayed2" class="modalNew" >
+            <button  class="close" aria-label="Close" (click)="toggleDisplay2()"><span aria-hidden="true">&times;</span></button>
+                  <article class="pagesTeranet">
+                        <div class="quote rightTeranet">
+                                    <div class="containerHalf">
+                                          <div class="DLP">
+                                                <h1>Teranet</h1>
+                                          <h4>Sept 2021 -> Dec 2021</h4>
+                                          
+                                          <p>Tools: SQL, C#, .NET Framwork, .NetCore, Dapper </p>
+                                            </div>
+                                            
+                                    </div>
+                        </div>
+      
+                        <div class="leftTeranet">
+                              <div class="containerLeft">
+                                    <h2>Software Developer</h2>
+                                    <li>Lead on JSON Parser Validator Program -> Developed, tested, deployed.</li>
+                                    <li>Fixed bugs and developed enhancements on C#, and .NET for front end and backend applications.</li>
+                                    <li>Completed integration and black box testing.</li>
+                                    <h4>For more information please contact me for my resume.</h4>
+                              </div>
+                        </div>
+                  </article>   
+            
+            
+      </div>
+        
+          
+      
 
           
-      <div class="modal"  [ngStyle]="{'display':display}">
-            <div class="modal-dialog" >
-                  <div class="modal-content">
-                        <div class="modal-header">
-                              <h4 class="modal-title">{{youth.title}} <br> {{youth.date}}</h4>
-                              <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
-                         </div>
-                   <div class="modal-body">
-                              <p>{{youth.content}}</p>
-                   </div>
-                        <div class="modal-footer"></div>
-                   </div>
-             </div>
-        </div>
-          <button class="quote wow animate__animated animate__pulse" data-wow-delay="0.6s" id="button" type="button" (click)="openModal()">{{youth.title}} <br> {{youth.date}}</button>
+          
 
-          <div class="modal"  [ngStyle]="{'display':display2}">
-            <div class="modal-dialog" >
-                  <div class="modal-content">
-                        <div class="modal-header">
-                              <h4 class="modal-title">{{robot.title}}<br> {{robot.date}}</h4>
-                              <button type="button" class="close" aria-label="Close" (click)="onCloseHandled2()"><span aria-hidden="true">&times;</span></button>
-                         </div>
-                   <div class="modal-body">
-                              <p>{{robot.content}}</p>
-                   </div>
-                        <div class="modal-footer"></div>
-                   </div>
-             </div>
-      </div>
-          <button class="quote wow animate__animated animate__pulse" data-wow-delay="0.8s" id="button" type="button" (click)="openModal2()">{{robot.title}} <br> {{robot.date}}</button>
-
-          <div class="modal"  [ngStyle]="{'display':display3}">
-            <div class="modal-dialog" >
-                  <div class="modal-content">
-                        <div class="modal-header">
-                              <h4 class="modal-title">{{deca.title}}<br> {{deca.date}}</h4>
-                              <button type="button" class="close" aria-label="Close" (click)="onCloseHandled3()"><span aria-hidden="true">&times;</span></button>
-                         </div>
-                   <div class="modal-body quote">
-                              <p>{{deca.content}}<br>
-                                    {{deca.contentB}} <br>
-                                    {{deca.contentC}}</p>
-                   </div>
-                        <div class="modal-footer"></div>
-                   </div>
-             </div>
-        </div>
-          <button class="quote wow animate__animated animate__pulse" data-wow-delay="1.0s" id="button" type="button" (click)="openModal3()">Deca @ Resurrection CSS 2019/2020<br> School Executive, Regional Winner</button>
-
-          <div class="modal"  [ngStyle]="{'display':display4}">
-            <div class="modal-dialog" >
-                  <div class="modal-content">
-                        <div class="modal-header">
-                              <h4 class="modal-title">{{football.title}}<br> {{football.date}} </h4>
-                              <button type="button" class="close" aria-label="Close" (click)="onCloseHandled4()"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                              <p>{{football.content}}</p>
-                        </div>
-                  <div class="modal-footer"></div>
-            </div>
-            </div>
-      </div>
-      <button class="quote wow animate__animated animate__pulse" data-wow-delay="1.2s" id="button" type="button" (click)="openModal4()">{{football.title}}<br> {{football.date}} </button>   
+          
 </div>
 <router-outlet></router-outlet>

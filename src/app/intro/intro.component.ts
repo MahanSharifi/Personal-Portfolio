@@ -26,7 +26,6 @@ export class IntroComponent implements OnInit {
 
   freeTime = {
     title: '',
-    date: '',
     about: ''
   };
 

@@ -11,6 +11,7 @@ import { LEDDiceComponent } from './leddice/leddice.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TechExperiencesComponent } from './tech-experiences/tech-experiences.component';
 import { VBACalcComponent } from './vba-calc/vba-calc.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
 
 const routes: Routes = [
   { 
@@ -28,7 +29,7 @@ const routes: Routes = [
           children: [
             {
             path: '',
-            component: ApiComponent,
+            component: TechExperiencesComponent,
             children: [
               { 
                 path: '', 
@@ -36,11 +37,17 @@ const routes: Routes = [
                 children: [
                   { 
                     path: '', 
-                    component: TechExperiencesComponent,
+                    component: ApiComponent,
                       children: [
                         {
                           path: '',
-                          component: ContactComponent
+                          component: VolunteerComponent,
+                            children: [
+                              {
+                                path: '',
+                                component: ContactComponent
+                              }
+                            ]
                       }
                     ] 
                   },
@@ -59,6 +66,10 @@ const routes: Routes = [
   { 
     path: 'TECH', 
     component: TechExperiencesComponent
+  },
+  { 
+    path: 'Volunteer', 
+    component: VolunteerComponent
   },
   { 
     path: 'About', 

@@ -8,6 +8,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, pre, form, blockquote, th, td
     margin: 0;
     padding: 0;
     direction: ltr;
+    
 }
 
 body {
@@ -325,7 +326,7 @@ h6 a {
 
 @media (min-width: 1800px) and (max-width: 2224px) {
     .headSection h2:after {
-        background:#000000;
+        background:rebeccapurple;
         content:"";
        display:block;
        width:30px;
@@ -358,7 +359,7 @@ h6 a {
     }
 
     .headSection h2:after {
-        background:#000000;
+        background:rebeccapurple !important;
         content:"";
         display:block;
         width:30px;
@@ -371,6 +372,9 @@ h6 a {
 
 @media (max-width: 480px) {
 
+    body {
+        overflow-x:auto;
+    }
     .headSection h1  {
         font-size: 15px !important;   
     }
@@ -429,6 +433,44 @@ h6 a {
         height:5px;
         margin-top:30px;
     }
+
+    .pagesTeranet {
+        display: block !important;
+        padding-top: 1em !important;
+    }
+    .rightTeranet {
+        width: auto !important;
+        margin-right: 2em; 
+    }
+    .leftTeranet {
+        margin-left: 10%;
+        
+    }
+
+    .pages {
+        display: block !important;
+        padding-top: 1em !important;
+    }
+
+    .right {
+        width: auto !important;
+        margin-right: 2em; 
+    }
+
+    .left {
+        margin-left: 23%;
+    }
+    .pages::after {
+        width: 0em !important;
+        height: 0em !important;
+        background: linear-gradient(0deg, transparent 0, transparent 0) !important;
+      }
+    
+.pagesTeranet::after {
+    width: 0em !important;
+    height: 0em !important;
+    background: linear-gradient(0deg, transparent 0, transparent 0) !important;
+  }
 
 }
 
@@ -508,6 +550,69 @@ h6 a {
         height:5px;
         margin-top:30px;
     }
+
+    .pagesTeranet {
+        display: block !important;
+        padding-top: 1em !important;
+    }
+    .rightTeranet {
+        width: auto !important;
+        margin-right: 2em; 
+    }
+    .leftTeranet {
+        margin-left: 23%;
+        
+    }
+
+    .pages {
+        display: block !important;
+  padding-top: 1em !important;
+    }
+
+    .right {
+        width: auto !important;
+        margin-right: 2em; 
+    }
+
+    .left {
+        margin-left: 23%;
+    }
+    .pages::after {
+        width: 0em !important;
+        height: 0em !important;
+        background: linear-gradient(0deg, transparent 0, transparent 0) !important;
+      }
+    
+.pagesTeranet::after {
+    width: 0em !important;
+    height: 0em !important;
+    background: linear-gradient(0deg, transparent 0, transparent 0) !important;
+  }
+}
+
+
+@media (min-width: 250px) and (max-width: 370px) {
+    .leftTeranet {
+        
+        
+      }
+      
+      .rightTeranet {
+        
+        width: auto !important;
+        margin-right: 0em; 
+      }
+      
+      .pagesTeranet {
+        display: block !important;
+      }
+      
+      .pagesTeranet::after {
+        width: 0em !important;
+        height: 0em !important;
+        background: linear-gradient(0deg, transparent 0, transparent 0) !important;
+      }
+
 }
 
 

@@ -1,37 +1,40 @@
-import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ConfigService } from '../config.service';
 
-
-
 @Component({
-  selector: 'app-tech-experiences',
-  templateUrl: './tech-experiences.component.html',
-  styleUrls: ['./tech-experiences.component.css']
+  selector: 'app-volunteer',
+  templateUrl: './volunteer.component.html',
+  styleUrls: ['./volunteer.component.css']
 })
-export class TechExperiencesComponent implements OnInit {
-
-displayed = true;
-displayed2 = true;
-
+export class VolunteerComponent implements OnInit {
   display0 = "none";
   display = "none";
   display2 = "none";
   display3 = "none";
   display4 = "none";
   displayNEW= "none";
-  
-  toggleDisplay() {
-    this.displayed = !this.displayed;
+  displayV = true;
+  displayV2 = true;
+  displayV3 = true;
+  displayV4 = true;
+
+  toggleDisplayV() {
+    this.displayV = !this.displayV;
   }
 
-  toggleDisplay2() {
-    this.displayed2 = !this.displayed2;
+  toggleDisplayV2() {
+    this.displayV2 = !this.displayV2;
   }
+  toggleDisplayV3() {
+    this.displayV3 = !this.displayV3;
+  }
+  toggleDisplayV4() {
+    this.displayV4 = !this.displayV4;
+  }
+
 
   openModal0() {
     this.display0 = "block";
-    
   }
 
   openModal() {
@@ -51,7 +54,6 @@ displayed2 = true;
 
   openModal5() {
     this.displayNEW = "block";
-    
   } 
   onCloseHandledNew() {
     this.displayNEW = "none";
@@ -119,11 +121,9 @@ displayed2 = true;
     title: '',
     date: ''
   }
-  
 
+  constructor( public config: ConfigService ) { }
 
-  constructor( public config: ConfigService ) { 
-  }
 
   ngOnInit(): void {
     this.coop = this.config.getConfig().coop;
