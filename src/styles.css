@@ -472,6 +472,15 @@ h6 a {
     background: linear-gradient(0deg, transparent 0, transparent 0) !important;
   }
 
+  
+.tt {
+    display:block !important;
+  }
+  
+  .uc {
+    display:block !important;
+  }
+
 }
 
 
@@ -612,6 +621,15 @@ h6 a {
         height: 0em !important;
         background: linear-gradient(0deg, transparent 0, transparent 0) !important;
       }
+
+      
+.tt {
+    display:block !important;
+  }
+  
+  .uc {
+    display: block !important;
+  }
 
 }
 

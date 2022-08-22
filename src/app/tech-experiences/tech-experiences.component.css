@@ -428,3 +428,21 @@ svg {
   100% {
     transform: translate(0, 0);
     opacity: 0; } }
+
+
+
+.uc  {
+  color: #719cf8;
+  font-weight: bolder !important;
+  font-size: 1.2em;
+  display: none;
+}
+
+.tt {
+  color: #90EE90;
+  font-weight: bolder !important;
+  font-size: 1.2em;
+  display: none;
+}
+
+

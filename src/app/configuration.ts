@@ -37,7 +37,7 @@ export const configuration = {
         data: 'Please reach out to me via any of the social platforms or'
       },
       foot: {
-        f: 'Mahan Sharifi-Ghazvini 2022'
+        f: 'Mahan Sharifi-Ghazvini 2022.'
       },
       content: {
         data1: 'HEY! I enjoy playing soccer, and hanging out with my family and friends.',
@@ -132,7 +132,7 @@ export const configuration = {
         caption: 'Photo: VBA reciprocal code, Quadratic, Radical, and Recirocal sheet'
       },
       uptake: {
-        title: 'Full Stack Developer @ Uptake Canada',
+        title: 'Full Stack Software Dev @ Uptake Canada',
         date: 'Summer 2022'
       }
   };
