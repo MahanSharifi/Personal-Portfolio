@@ -91,7 +91,7 @@ export const configuration = {
       },
       tech:  {
         title: 'Internships',
-        sub: 'click any of the following below'
+        sub: 'click any of the following bubbles below!'
       },
       coop: {
         title: 'Software Developer @ Teranet Corp.',
