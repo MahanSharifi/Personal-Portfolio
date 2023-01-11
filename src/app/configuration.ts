@@ -4,7 +4,7 @@ export const configuration = {
         headingText: 'Software Developer'
       },
       title: {
-        titleText:'Mahan Sharifi-Ghazvini',
+        titleText:'Mahan Sharifi',
         titleHeader:'About Me'
       },
       University: {
@@ -37,7 +37,7 @@ export const configuration = {
         data: 'Please reach out to me via any of the social platforms or'
       },
       foot: {
-        f: 'Mahan Sharifi-Ghazvini 2023.'
+        f: 'Mahan Sharifi 2023.'
       },
       content: {
         data1: 'HEY! I enjoy playing soccer, and hanging out with my family and friends.',

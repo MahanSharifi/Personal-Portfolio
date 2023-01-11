@@ -16,7 +16,7 @@
 }
 
 .projSub {
-    font-style: italic;
+    
     color:#ccc;
     margin: 10px 0 25px 0;
 }
@@ -30,7 +30,7 @@
 }
 
 .projContent p {
-    font-style:italic;
+    
     color:#b4b4b4;
     line-height:auto;
     margin:0;
