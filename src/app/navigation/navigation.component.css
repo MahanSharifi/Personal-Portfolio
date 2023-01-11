@@ -2,9 +2,12 @@ nav ul {
     text-transform: uppercase;
     font-style: normal !important;
     font-family:Arial, Helvetica, sans-serif !important;
-    color:rgb(55, 49, 59) !important;
+    
 }
 
+nav ul li a{
+    color: rebeccapurple !important;
+}
 nav a {
     display: block;
     padding: 0 10px;
