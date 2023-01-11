@@ -2,6 +2,38 @@
 
 
 <div id="VBA" class="container2">
+    <div class="maz">
+        <div id="logo">
+            <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
+            
+        </div>
+        <nav id="nav-main">
+            <ul>
+                <li>
+                    <a id="h" routerLink="/Home" routerLinkActive="active"
+                    [routerLinkActiveOptions]={exact:true}
+                    >Home
+                    <h2></h2>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/About" href="#about" routerLinkActive="active">About</a>
+                </li>
+                <li>
+                    <a routerLink="/TECH" routerLinkActive="active">Internships</a>
+                </li>
+                <li>
+                    <a routerLink="/Projects" routerLinkActive="active" >Projects</a>
+                </li>
+                <li>
+                    <a routerLink="/Volunteer" routerLinkActive="active">Volunteer</a>
+                </li>
+                <li class="socialHead">
+                    <app-social></app-social>
+                </li>
+            </ul>
+        </nav>
+      </div>
 <div class="quote2">
     <h3>{{vb.title}}<p>{{vb.date}}</p></h3>
         <a href="https://github.com/MahanSharifi/Math-Calculator-for-Different-Functions" target="_blank">GitHub Code

@@ -37,12 +37,8 @@ $(document).ready(function () {
 	}
 
 	$('#content').waypoint(function (direction) {
-		if (direction === 'down') {
-			$('#header').addClass('nav-solid fadeInDown');
-		}
-		else {
-			$('#header').removeClass('nav-solid fadeInDown');
-		}
+		
+		
 	});
 
 });

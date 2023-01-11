@@ -13,6 +13,7 @@ export class TechExperiencesComponent implements OnInit {
 
 displayed = true;
 displayed2 = true;
+displayed3 = true;
 
   display0 = "none";
   display = "none";
@@ -29,6 +30,9 @@ displayed2 = true;
     this.displayed2 = !this.displayed2;
   }
 
+  toggleDisplay3() {
+    this.displayed3 = !this.displayed3;
+  }
   openModal0() {
     this.display0 = "block";
     

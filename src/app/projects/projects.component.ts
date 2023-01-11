@@ -15,6 +15,13 @@ export class ProjectsComponent implements OnInit {
     content: '',
   }
 
+  wlp4 = {
+    title: '',
+    date: '',
+    tools: '',
+    content: '',
+  }
+
   biqq = {
     title: '',
     date: '',
@@ -57,6 +64,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.jSon = this.config.getConfig().jSon;
+    this.wlp4 = this.config.getConfig().wlp4;
     this.biqq = this.config.getConfig().biqq;
     this.web = this.config.getConfig().web;
     this.led = this.config.getConfig().led;

@@ -24,7 +24,7 @@ button{
   .container2 .quote {
     margin-left: 30px !important;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
 .container2 {
@@ -33,6 +33,7 @@ button{
   line-height: 40px;
   font-weight: lighter;
   padding: 40px;
+  padding-top: 0px !important;
   color: rgb(0, 0, 0);
   font-family: 'Open Sans', sans-serif, Arial, Helvetica;
 }
@@ -44,7 +45,9 @@ button{
 }
 
 
-
+.modalNew {
+  padding-bottom: 2em;
+}
 
 .pages {
   display: flex;
@@ -135,6 +138,15 @@ article::after {
   font: white;
   
 }
+.right3 {
+  width: 40%;
+  background: #a5c2ff;
+  grid-gap: 2em !important;
+  border-radius: 1em !important;
+  color: white;
+  font: white;
+  margin-top: 1em !important;
+}
 
 .pagesTeranet {
   display: flex;
@@ -158,12 +170,25 @@ article::after {
   color: white;
 }
 
+.pagesDes {
+  display: flex;
+  background: linear-gradient(-135deg, transparent 1.5em, rgb(233,229,229) 0) !important;
+}
+
+.pagesDes::after {
+  width: 2.13em;
+  height: 2.13em;
+  background-color: #a5c2ff;
+  background: linear-gradient(-135deg, transparent 1.5em, #a5c2ff 0) !important;
+}
 
 
 
 svg {
   position: absolute;
 }
+
+
 
 #gooey-button {
   padding: 1rem;
@@ -339,6 +364,112 @@ svg {
         animation-delay: 1.6s; }       
         
 
+
+
+
+
+        #gooey-button3 {
+          padding: 1rem;
+          font-size: 1rem;
+          border: none;
+          color: #0c1016 !important;
+          filter: url("#gooey");
+          position: relative;
+          background-color: #a5c2ff; }
+          #gooey-button3:focus {
+            outline: none; }
+          #gooey-button3 .bubbles3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0; }
+            #gooey-button3 .bubbles3 .bubble {
+              background-color: #a5c2ff !;
+              border-radius: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: block;
+              z-index: -1; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(1) {
+                left: 79px;
+                width: 25px;
+                height: 25px;
+                animation: move-1 3.02s infinite;
+                animation-delay: 0.2s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(2) {
+                left: 17px;
+                width: 25px;
+                height: 25px;
+                animation: move-2 3.04s infinite;
+                animation-delay: 0.4s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(3) {
+                left: 40px;
+                width: 25px;
+                height: 25px;
+                animation: move-3 3.06s infinite;
+                animation-delay: 0.6s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(4) {
+                left: 93px;
+                width: 25px;
+                height: 25px;
+                animation: move-4 3.08s infinite;
+                animation-delay: 0.8s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(5) {
+                left: 94px;
+                width: 25px;
+                height: 25px;
+                animation: move-5 3.1s infinite;
+                animation-delay: 1s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(6) {
+                left: 49px;
+                width: 25px;
+                height: 25px;
+                animation: move-6 3.12s infinite;
+                animation-delay: 1.2s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(7) {
+                left: 18px;
+                width: 25px;
+                height: 25px;
+                animation: move-7 3.14s infinite;
+                animation-delay: 1.4s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(8) {
+                left: 42px;
+                width: 25px;
+                height: 25px;
+                animation: move-8 3.16s infinite;
+                animation-delay: 1.6s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(9) {
+                left: 55px;
+                width: 25px;
+                height: 25px;
+                animation: move-9 3.18s infinite;
+                animation-delay: 1.8s; }
+              #gooey-button3 .bubbles3 .bubble:nth-child(10) {
+                left: 80px;
+                width: 25px;
+                height: 55px;
+                animation: move-10 5s infinite;
+                animation-delay: 1.6s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 @keyframes move-1 {
   0% {
     transform: translate(0, 0); }
@@ -429,20 +560,135 @@ svg {
     transform: translate(0, 0);
     opacity: 0; } }
 
-
+*/
+.ds  {
+  color: #a5c2ff;
+  font-weight: bolder !important;
+  font-size: 1.2em;
+  display: relative;
+}
 
 .uc  {
   color: #719cf8;
   font-weight: bolder !important;
   font-size: 1.2em;
-  display: none;
+  display: relative;
 }
 
 .tt {
   color: #90EE90;
   font-weight: bolder !important;
   font-size: 1.2em;
-  display: none;
+  display: relative;
 }
 
+
+
+
+.maz {
+  overflow: hidden;
+  background-color: White;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 98%; /* Full width */
+  margin-left: -1%;
+  
+  z-index: 99999999999999;
+}
+
+/* Links inside the navbar */
+.maz a {
+  float: left;
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.maz a:hover {
+  
+  color: black;
+}
+
+nav ul {
+  text-transform: uppercase;
+}
+
+nav a {
+  display: block;
+  padding: 0 10px;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+}
+nav-main {
+  position: sticky;
+}
+/*  */
+#nav-main li {
+  list-style-type: none;
+  margin: 10px 15px;
+}
+
+/*  */
+#nav-main li .fa {
+  transition: .6s;
+  line-height: 0px;
+}
+
+/*  */
+
+/*  */
+#nav-main li a {
+  position: relative;
+  display: block;
+  margin: 10px 10px;
+  border-radius: 0%;
+  text-align: center;
+  line-height: 50px;    
+  height: 50px;
+  transition: .6s;
+}
+
+#nav-main li a:hover {
+  transform: translate(0, -10px);
+}
+
+/*  */
+#nav-main li:nth-child(1) a:hover{
+  color: rebeccapurple;  
+}
+/*  */
+#nav-main li:nth-child(2) a:hover{
+  color: rebeccapurple;
+}
+
+/*  */
+#nav-main li:nth-child(3) a:hover{
+  color: rebeccapurple;
+}
+
+/*  */
+#nav-main li:nth-child(4) a:hover{
+  color: rebeccapurple;
+}
+
+#nav-main li:nth-child(5) a:hover{
+  color: rebeccapurple;
+}
+
+
+#nav-main .active { 
+  color: rebeccapurple !important ;
+  text-decoration: underline 5px;
+}
 

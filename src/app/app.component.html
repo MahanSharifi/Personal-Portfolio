@@ -6,10 +6,15 @@
       <div class="FrontPageBottomBorder animated" style="visibility: visible;"></div>
       <div class="FrontPageLeftBorder  animated" style="visibility: visible;"></div>
 </div>
+
 <div id="mazzie">
     <div id="wrapper">
         <main id="content">
-            <router-outlet (activate)="onActivate()" ><app-header-main></app-header-main></router-outlet>
+            
+            <router-outlet (activate)="onActivate()" >
+                
+                <app-header-main></app-header-main>
+            </router-outlet>
             <app-footer></app-footer>
         </main>
     </div>

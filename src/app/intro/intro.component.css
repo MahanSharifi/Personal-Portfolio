@@ -10,3 +10,113 @@
     margin: 1em;
     width: 40%;
 }
+
+
+.maz {
+    overflow: hidden;
+    background-color: White;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 98%; /* Full width */
+    margin-left: -1%;
+    z-index: 99999999999999;
+  }
+  
+  /* Links inside the navbar */
+  .maz a {
+    float: left;
+    display: block;
+    color: Black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .maz a:hover {
+    
+    color: black;
+  }
+  
+  nav ul {
+    text-transform: uppercase;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0 10px;
+  }
+  
+  ul {
+    text-align: center;
+  }
+  
+  li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+  }
+  nav-main {
+    position: sticky;
+  }
+  /*  */
+  #nav-main li {
+    list-style-type: none;
+    margin: 10px 15px;
+  }
+  
+  /*  */
+  #nav-main li .fa {
+    transition: .6s;
+    line-height: 0px;
+  }
+  
+  /*  */
+  
+  /*  */
+  #nav-main li a {
+    position: relative;
+    display: block;
+    margin: 10px 10px;
+    border-radius: 0%;
+    text-align: center;
+    line-height: 50px;    
+    height: 50px;
+    transition: .6s;
+  }
+  
+  #nav-main li a:hover {
+    transform: translate(0, -10px);
+  }
+  
+  /*  */
+  #nav-main li:nth-child(1) a:hover{
+    color: rebeccapurple;  
+  }
+  /*  */
+  #nav-main li:nth-child(2) a:hover{
+    color: rebeccapurple;
+  }
+  
+  /*  */
+  #nav-main li:nth-child(3) a:hover{
+    color: rebeccapurple;
+  }
+  
+  /*  */
+  #nav-main li:nth-child(4) a:hover{
+    color: rebeccapurple;
+  }
+  
+  #nav-main li:nth-child(5) a:hover{
+    color: rebeccapurple;
+  }
+  
+  
+  #nav-main .active { 
+    color: rebeccapurple !important ;
+    text-decoration: underline 5px;
+  }
+  
+
+  

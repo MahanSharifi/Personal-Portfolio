@@ -36,10 +36,10 @@ const routes: Routes = [
                 component: ProjectsComponent,
                 children: [
                   { 
-                    path: '', 
-                    component: ApiComponent,
-                      children: [
-                        {
+                    //path: '', 
+                    //component: ApiComponent,
+                     // children: [
+                        //{
                           path: '',
                           component: VolunteerComponent,
                             children: [
@@ -48,8 +48,8 @@ const routes: Routes = [
                                 component: ContactComponent
                               }
                             ]
-                      }
-                    ] 
+                      //}
+                    //] 
                   },
                 ]
               },

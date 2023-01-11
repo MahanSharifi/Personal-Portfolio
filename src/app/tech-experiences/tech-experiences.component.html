@@ -1,4 +1,18 @@
 <div id="TECH" class="container2 txt">
+      
+      <div class="maz">
+        <div class="clearfix">
+            <div id="logo">
+                <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
+                
+            </div>
+            <app-social></app-social>
+            <app-navigation></app-navigation>
+            <div id="nav-box"><span></span></div>
+           <nav id="nav-content-pages"></nav>
+        </div>
+          </div>
+
       <h1>{{tech.title}}</h1>
       <h6>{{tech.sub}}</h6>
 
@@ -12,9 +26,57 @@
                 </filter>
             </defs>
         </svg>
-      
+        <p class="ds">Descartes Systems Group - Software Dev Winter 2023</p>
         <p class="uc">Uptake Canada - Full Stack Software Dev Summer 2022</p>
         <p class="tt">Teranet - Software Dev Fall 2021</p>
+        
+        
+        
+        <button id="gooey-button3" class="quote wow animateanimated animatepulse"(click)="toggleDisplay3()">
+            Software Dev @ Descartes Systems Group <br> Jan 2023 - Apr. 2023
+            <span class="bubbles">
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+                <span class="bubble3"></span>
+
+            </span>
+
+        </button>
+
+
+
+
+      <div [hidden]="displayed3" class="modalNew">
+            <button type="button" class="close" aria-label="Close" (click)="toggleDisplay3()"><span aria-hidden="true">&times;</span></button>
+            <article class="pagesDes">
+                  <div class="quote right3">
+                              <div class="containerHalf">
+                                    <div class="DLP">
+                                          <h1>Descartes Systems Group</h1>
+                                          <h4>Jan 2023 -> May 2023</h4>
+                                          <p>Tools/Languages: TBD</p>
+                                      </div>
+                              </div>
+                  </div>
+
+                  <div class="left">
+                        <div class="containerLeft">
+                            <h2>Software Developer</h2>
+                            <li>TBD</li>
+                            <h4>For more information please contact me for my resume.</h4>
+                        </div>
+                  </div>
+            </article>
+      </div>
+        
+        
         <button id="gooey-button" class="quote wow animate__animated animate__pulse"(click)="toggleDisplay()">
             {{uptake.title}} <br> {{uptake.date}}
             <span class="bubbles">

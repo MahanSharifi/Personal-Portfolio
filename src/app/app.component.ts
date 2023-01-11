@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   isLoading = true;
   title = 'Mazzie';
   onActivate() {
-    window.scroll(0,0);
+    window.scroll(0,400);
   }
 
   constructor(public apiService: GetApiService) { }

@@ -13,7 +13,7 @@ export const configuration = {
       },
       tools: {
         title: 'Tools',
-        about: 'Git, BASH, Linux, Angular, MSS (SQL), VS, VSCode, Rapid API, Dapper'
+        about: 'AWS, .NET, Angular, Git, BASH, Linux, MSS (SQL), VS, VSCode, Rapid API, Dapper'
       },
       freeTime: {
         title: 'Freetime !!!',
@@ -21,7 +21,7 @@ export const configuration = {
       },
       lang: {
         title: 'Languages',
-        about: 'C++, C, C#, SQL, CSS/HTML/JS/TS, some Java'
+        about: 'C++, C, C#, Kotlin, R, VBA, ARM/MIPS, SQL, CSS/HTML/JS/TS, and learning python.'
       },
       biq: {
         title:'Biquadris',
@@ -37,7 +37,7 @@ export const configuration = {
         data: 'Please reach out to me via any of the social platforms or'
       },
       foot: {
-        f: 'Mahan Sharifi-Ghazvini 2022.'
+        f: 'Mahan Sharifi-Ghazvini 2023.'
       },
       content: {
         data1: 'HEY! I enjoy playing soccer, and hanging out with my family and friends.',
@@ -55,6 +55,12 @@ export const configuration = {
         date: 'November 2021',
         tools: 'C#, Dapper, Stored Procedures (SQL), JSON, VS., .Net Framework, Fluent Email',
         content: 'Designed a JSON Parser Validator that was later deployed on batch machine using C# (Console app.) by executing stored procedures with Dapper, deserializing the object, and developing a particular set of configuration rules in JSON. Continuously completed functional tests after deployment.',
+      },
+      wlp4: {
+        title: 'WLP4 (C++ Subset) Compiler',
+        date: 'August 2022',
+        tools: 'C++, MIPS, WLP4 has its own lexical, context-free, and context-sensitive syntax.',
+        content: 'Programmed a scanner, parser, context sensitive analyzer, and a code generator. Also implemented a maximum munch algorithm, parse tree traversals, and bottum-up parsing (LR(1)).',
       },
       biqq: {
         title: 'Biquadris',

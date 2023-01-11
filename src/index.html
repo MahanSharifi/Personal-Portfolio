@@ -12,14 +12,164 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+  
   </head>
+
   <body>
-    <app-root></app-root>
+    
+  
+    <section class="ppp">
+      
+      <div id="tsparticles">
+        <canvas class="tsparticles-canvas-el" width="507" height="741" style="width: 100%; height: 100%; background-image: url(&quot;https://particles.js.org/images/background.jpg&quot;);"></canvas>
+      </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.6/tsparticles.bundle.min.js"></script>
+      <script type="text/javascript">
+        tsParticles.load("tsparticles", {
+          fpsLimit: 80,
+        particles: {
+          number: {
+            value: 150,
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: "#ffffff"
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000"
+            },
+            polygon: {
+              nb_sides: 5
+            },
+            image: {
+              src: "images/github.svg",
+              width: 100,
+              height: 100
+            }
+          },
+          opacity: {
+            value: 1,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 2,
+              opacity_min: 0.1,
+              sync: false
+            }
+          },
+          size: {
+            value: 30,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 60,
+              size_min: 0.1,
+              sync: false
+            }
+          },
+          line_linked: {
+            enable: true,
+            distance: 100,
+            color: "#ffffff",
+            opacity: 1,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            attract: {
+              enable: false,
+              rotateX:1000,
+              rotateY: 1200
+            }
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onHover: {
+              enable: true,
+              mode: "bubble",
+              parallax: {
+                enable: false,
+                force: 90,
+                smooth: 20
+              }
+            },
+            onClick: {
+              enable: true,
+              mode: "push"
+            },
+            resize: true
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              lineLinked: {
+                opacity: 1
+              }
+            },
+            bubble: {
+              distance: 400,
+              size: 100,
+              duration: 2,
+              opacity: 1,
+              speed: 3
+            },
+            repulse: {
+              distance: 200
+            },
+            push: {
+              particles_nb: 8
+            },
+            remove: {
+              particles_nb: 2
+            }
+          }
+        },
+        backgroundMask: {
+          enable: true,
+          cover: {
+            value: {
+              r: 255,
+              g: 255,
+              b: 255
+            }
+          }
+        },
+        retina_detect: true,
+        background: {
+          image: "URL('https://images.unsplash.com/photo-1502856755506-d8626589ef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"
+        }
+        });
+        </script>
+    
+    <app-root>
+      
+    </app-root>
+    
+    
+    
+  
     <script src="assets/js/jquery.1.8.3.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/jquery.enllax.min.js"></script>
     <script src="assets/js/jquery.scrollUp.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/site.js"></script>
+
+    
   </body>
 </html>
