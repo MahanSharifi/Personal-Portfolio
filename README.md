@@ -1,27 +1,63 @@
-# Website
+CS456 UWaterloo Spring 2023 Assignment 2
+Mahan Sharifi-Ghazvini
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
-## Development server
+Background INFO:
+TO RUN THE RECIEVER:
+ <hostname for the network emulator>,
+ <UDP port number used by the link emulator to receive ACKs from the receiver>,
+ <UDP port number used by the receiver to receive data from the emulator>, and
+ <name of the file into which the received data is written>. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+TO RUN THE SENDER:
+ <host address of the network emulator>,
+ <UDP port number used by the emulator to receive data from the sender>,
+ <UDP port number used by the sender to receive ACKs from the emulator>,
+ <timeout interval in units of millisecond>, and
+ <name of the file to be transferred> 
 
-## Code scaffolding
+TO RUN THE NETWORK_EMULATOR:
+• <emulator's receiving UDP port number in the forward (sender) direction>,
+• <receiver's network address>,
+• <receiver's receiving UDP port number>,
+• <emulator's receiving UDP port number in the backward (receiver) direction>,
+• <sender's network address>,
+• <sender's receiving UDP port number>,
+• <maximum delay of the link in units of millisecond>,
+• <packet discard probability>, and
+• <verbose-mode> (Boolean: If set to 1, the network emulator will output its internal processing). 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To run this program please do the following:
+1. have an input.txt file. Make sure to provide some input
+2. Create an empty output.txt file
+3. Ensure the execution permissions on the sender.py and receiver.py are allowed
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Example Execution in the given order:
+1. On the host host1: network_emulator 9991 host2 9994 9993 host3 9992 1 0.2 0
+2. On the host host2: receiver host1 9993 9994 <output File>
+3. On the host host3: sender host1 9991 9992 50 <input file>
 
-## Running end-to-end tests
+For host1: ubuntu2004-004
+For host2: ubuntu2204-002
+For host3: ubuntu2004-008
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+EMULATOR:
+Built and Tested on ubuntu2004-004
 
-## Further help
+Receiver:
+Built and Tested on ubuntu2004-002 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Sender:
+Built and Tested on ubuntu2004-008
+
+Instruction:
+You need to ssh into each (network, emulator, and reciever).student.cs.uwaterloo.ca 
+
+
+Used Python 3.10.6.
+
+IDE used: VS Code
+
