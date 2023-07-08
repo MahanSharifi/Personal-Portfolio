@@ -4,28 +4,28 @@ Mahan Sharifi-Ghazvini
 
 Background INFO:
 TO RUN THE RECIEVER:
- <hostname for the network emulator>,
- <UDP port number used by the link emulator to receive ACKs from the receiver>,
- <UDP port number used by the receiver to receive data from the emulator>, and
- <name of the file into which the received data is written>. 
+- hostname for the network emulator>,
+- UDP port number used by the link emulator to receive ACKs from the receiver,
+- UDP port number used by the receiver to receive data from the emulator, and
+- name of the file into which the received data is written. 
 
 TO RUN THE SENDER:
- <host address of the network emulator>,
- <UDP port number used by the emulator to receive data from the sender>,
- <UDP port number used by the sender to receive ACKs from the emulator>,
- <timeout interval in units of millisecond>, and
- <name of the file to be transferred> 
+- host address of the network emulator,
+- UDP port number used by the emulator to receive data from the sender,
+- UDP port number used by the sender to receive ACKs from the emulator,
+- timeout interval in units of millisecond, and
+- name of the file to be transferred 
 
 TO RUN THE NETWORK_EMULATOR:
-• <emulator's receiving UDP port number in the forward (sender) direction>,
-• <receiver's network address>,
-• <receiver's receiving UDP port number>,
-• <emulator's receiving UDP port number in the backward (receiver) direction>,
-• <sender's network address>,
-• <sender's receiving UDP port number>,
-• <maximum delay of the link in units of millisecond>,
-• <packet discard probability>, and
-• <verbose-mode> (Boolean: If set to 1, the network emulator will output its internal processing). 
+• emulator's receiving UDP port number in the forward (sender) direction,
+• receiver's network address,
+• receiver's receiving UDP port number,
+• emulator's receiving UDP port number in the backward (receiver) direction,
+• sender's network address,
+• sender's receiving UDP port number,
+• maximum delay of the link in units of millisecond,
+• packet discard probability, and
+• verbose-mode (Boolean: If set to 1, the network emulator will output its internal processing). 
 
 
 
