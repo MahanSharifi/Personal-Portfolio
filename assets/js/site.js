@@ -30,7 +30,7 @@ $(document).ready(function () {
     if ($("nav#nav-content-pages ul").hasClass("expanded")) {
       $("nav#nav-content-pages ul.expanded")
         .removeClass("expanded")
-        .slideUp(250);
+        .slideUp(400);
       $("#nav-box span").removeClass("open");
     }
   });
@@ -40,7 +40,13 @@ $(document).ready(function () {
     $("#header").stickyNavbar();
   }
 
-  $("#content").waypoint(function (direction) {});
+  $("#content").waypoint(function (direction) {
+    if (direction === "down") {
+      $("#header").addClass("nav-solid fadeInDown");
+    } else {
+      $("#header").removeClass("nav-solid fadeInDown");
+    }
+  });
 });
 
 /* Preloader and animations */
