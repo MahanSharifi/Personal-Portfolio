@@ -9,22 +9,17 @@ const API_KEY = environment.API_KEY;
 const API_HOST = environment.API_HOST;
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GetApiService {
+  constructor(private httpClient: HttpClient) {}
 
-  constructor(private httpClient:HttpClient) { }
-
-  getapi():Observable<any> {
+  getapi(): Observable<any> {
     return this.httpClient.get<any>(API_URL, {
-      
       headers: {
-      'x-rapidapi-host': API_HOST,
-      'x-rapidapi-key': API_KEY,
-      }
-      
-      
-      
+        'x-rapidapi-host': API_HOST,
+        'x-rapidapi-key': API_KEY,
+      },
     });
   }
 }

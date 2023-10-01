@@ -1,113 +1,172 @@
 <div id="TECH" class="container2 txt">
-     <div class="maz">
-        <div class="clearfix">
-            <div id="logo">
-                <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
-                
-            </div>
-            <app-social></app-social>
-             <app-navigation></app-navigation>
-         <div id="nav-box"><span></span></div>
-        <nav id="nav-content-pages"></nav>
+  <div class="maz2">
+    <div class="clearfix">
+      <div id="logo">
+        <img
+          src="assets/images/logo-2.png"
+          id="first-logo"
+          alt="Landing Page"
+        />
+      </div>
+      <div id="nav-box"><span></span></div>
+      <nav id="nav-content-pages"></nav>
 
-            
+      <app-navigation></app-navigation>
+    </div>
+  </div>
+  <h1>Volunteering</h1>
+  <h6>{{ tech.sub }}</h6>
+
+  <button
+    class="quote wow animate__animated animate__pulse"
+    data-wow-delay="0.6s"
+    id="button"
+    type="button"
+    (click)="toggleDisplayV()"
+  >
+    {{ youth.title }} <br />
+    {{ youth.date }}
+  </button>
+  <div [hidden]="displayV" class="modal">
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="toggleDisplayV()"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+    <article class="pages">
+      <div class="quote right">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>{{ youth.title }} <br /></h1>
+            <h4>{{ youth.date }}</h4>
           </div>
-     </div>
-      
-    <h1>Volunteering</h1>
-    <h6>{{tech.sub}}</h6>
-
-
-    <button class="quote wow animate__animated animate__pulse" data-wow-delay="0.6s" id="button" type="button" (click)="toggleDisplayV()">{{youth.title}} <br> {{youth.date}}</button>
-    <div [hidden]="displayV" class="modal">
-      <button type="button" class="close" aria-label="Close" (click)="toggleDisplayV()"><span aria-hidden="true"></span></button>
-      <article class="pages">
-            <div class="quote right">
-                        <div class="containerHalf">
-                              <div class="DLP">
-                                    <h1>{{youth.title}} <br> </h1>
-                                    <h4>{{youth.date}}</h4>
-                                </div>            
-                        </div>
-            </div>
-            <div class="left">
-                  <div class="containerLeft">
-                      <h2>Co-Chair</h2>
-                      <p>{{youth.content}}</p>
-                  </div>
-            </div>
-      </article>
+        </div>
       </div>
-        
-
-      <button class="quote wow animate__animated animate__pulse" data-wow-delay="0.6s" id="button" type="button" (click)="toggleDisplayV2()">{{robot.title}} <br> {{robot.date}}</button>
-        <div class="modal" [hidden]="displayV2"  >
-            <button type="button" class="close" aria-label="Close" (click)="toggleDisplayV2()"><span aria-hidden="true"></span></button>
-            <article class="pages">
-                  <div class="quote right">
-                              <div class="containerHalf">
-                                    <div class="DLP">
-                                          <h1>{{robot.title}} <br> </h1>
-                                          <h4> {{robot.date}}</h4>
-                                      </div>            
-                              </div>
-                  </div>
-                  <div class="left">
-                        <div class="containerLeft">
-                        <h2>Programmer</h2>
-                            <p>{{robot.content}}</p>
-                        </div>
-                  </div>
-            </article>
-          
-    </div>
-      
-
-    <button class="quote wow animate__animated animate__pulse" data-wow-delay="1.0s" id="button" type="button" (click)="toggleDisplayV3()">Deca @ Resurrection CSS 2019/2020<br> School Executive, Regional Winner</button>
-        <div class="modal"  [hidden]="displayV3">
-            <button type="button" class="close" aria-label="Close" (click)="toggleDisplayV3()"><span aria-hidden="true"></span></button>
-            <article class="pages">
-                  <div class="quote right">
-                              <div class="containerHalf">
-                                    <div class="DLP">
-                                          <h1>{{deca.title}} </h1>
-                                          <h4>{{deca.date}} </h4>
-                                      </div>            
-                              </div>
-                  </div>
-                  <div class="left">
-                        <div class="containerLeft">
-                        <h2>Executive</h2>
-                        <p>{{deca.content}}<br>
-                              {{deca.contentB}} <br>
-                              {{deca.contentC}}</p>
-                        </div>
-                  </div>
-            </article>
-          
+      <div class="left">
+        <div class="containerLeft">
+          <h2>Co-Chair</h2>
+          <p>{{ youth.content }}</p>
+        </div>
       </div>
-        
-      <button class="quote wow animate__animated animate__pulse" data-wow-delay="1.2s" id="button" type="button" (click)="toggleDisplayV4()">{{football.title}}<br> {{football.date}} </button>   
-        <div class="modal"  [hidden]="displayV4">
-            <button type="button" class="close" aria-label="Close" (click)="toggleDisplayV4()"><span aria-hidden="true"></span></button>
-            <article class="pages">
-                  <div class="quote right">
-                              <div class="containerHalf">
-                                    <div class="DLP">
-                                          <h1>{{football.title}} </h1>
-                                          <h4>{{football.date}} </h4>
-                                      </div>            
-                              </div>
-                  </div>
-                  <div class="left">
-                        <div class="containerLeft">
-                        <h2>Coaching</h2>
-                        <p>{{football.content}}</p>
-                        </div>
-                  </div>
-            </article>
-          
-    </div>
-    
+    </article>
+  </div>
+
+  <button
+    class="quote wow animate__animated animate__pulse"
+    data-wow-delay="0.6s"
+    id="button"
+    type="button"
+    (click)="toggleDisplayV2()"
+  >
+    {{ robot.title }} <br />
+    {{ robot.date }}
+  </button>
+  <div class="modal" [hidden]="displayV2">
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="toggleDisplayV2()"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+    <article class="pages">
+      <div class="quote right">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>{{ robot.title }} <br /></h1>
+            <h4>{{ robot.date }}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <div class="containerLeft">
+          <h2>Programmer</h2>
+          <p>{{ robot.content }}</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <button
+    class="quote wow animate__animated animate__pulse"
+    data-wow-delay="1.0s"
+    id="button"
+    type="button"
+    (click)="toggleDisplayV3()"
+  >
+    Deca @ Resurrection CSS 2019/2020<br />
+    School Executive, Regional Winner
+  </button>
+  <div class="modal" [hidden]="displayV3">
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="toggleDisplayV3()"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+    <article class="pages">
+      <div class="quote right">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>{{ deca.title }}</h1>
+            <h4>{{ deca.date }}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <div class="containerLeft">
+          <h2>Executive</h2>
+          <p>
+            {{ deca.content }}<br />
+            {{ deca.contentB }} <br />
+            {{ deca.contentC }}
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <button
+    class="quote wow animate__animated animate__pulse"
+    data-wow-delay="1.2s"
+    id="button"
+    type="button"
+    (click)="toggleDisplayV4()"
+  >
+    {{ football.title }}<br />
+    {{ football.date }}
+  </button>
+  <div class="modal" [hidden]="displayV4">
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="toggleDisplayV4()"
+    >
+      <span aria-hidden="true"></span>
+    </button>
+    <article class="pages">
+      <div class="quote right">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>{{ football.title }}</h1>
+            <h4>{{ football.date }}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <div class="containerLeft">
+          <h2>Coaching</h2>
+          <p>{{ football.content }}</p>
+        </div>
+      </div>
+    </article>
+  </div>
 </div>
 <router-outlet></router-outlet>

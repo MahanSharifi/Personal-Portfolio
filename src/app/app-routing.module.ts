@@ -14,94 +14,90 @@ import { VBACalcComponent } from './vba-calc/vba-calc.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
 
 const routes: Routes = [
-  { 
-    path: '', 
-    redirectTo: '/Home', 
-    pathMatch: 'full' 
+  {
+    path: '',
+    redirectTo: '/Home',
+    pathMatch: 'full',
   },
-  { 
-    path: 'Home', 
+  {
+    path: 'Home',
     component: HeaderComponent,
     children: [
-      { 
-        path: '', 
+      {
+        path: '',
         component: IntroComponent,
-          children: [
-            {
+        children: [
+          {
             path: '',
             component: TechExperiencesComponent,
             children: [
-              { 
-                path: '', 
+              {
+                path: '',
                 component: ProjectsComponent,
                 children: [
-                  { 
-                    //path: '', 
+                  {
+                    //path: '',
                     //component: ApiComponent,
-                     // children: [
-                        //{
-                          path: '',
-                          component: VolunteerComponent,
-                            children: [
-                              {
-                                path: '',
-                                component: ContactComponent
-                              }
-                            ]
-                      //}
-                    //] 
+                    // children: [
+                    //{
+                    path: '',
+                    component: VolunteerComponent,
+                    children: [
+                      {
+                        path: '',
+                        component: ContactComponent,
+                      },
+                    ],
+                    //}
+                    //]
                   },
-                ]
+                ],
               },
-            ]
+            ],
           },
-        ] 
+        ],
       },
-    ]
+    ],
   },
-  { 
-    path: 'Contact', 
-    component: ContactComponent 
+  {
+    path: 'Contact',
+    component: ContactComponent,
   },
-  { 
-    path: 'TECH', 
-    component: TechExperiencesComponent
+  {
+    path: 'TECH',
+    component: TechExperiencesComponent,
   },
-  { 
-    path: 'Volunteer', 
-    component: VolunteerComponent
+  {
+    path: 'Volunteer',
+    component: VolunteerComponent,
   },
-  { 
-    path: 'About', 
-    component: IntroComponent 
+  {
+    path: 'About',
+    component: IntroComponent,
   },
-  { 
-    path: 'Projects', 
-    component: ProjectsComponent 
+  {
+    path: 'Projects',
+    component: ProjectsComponent,
   },
-  { 
-    path: 'LEDDice', 
-    component: LEDDiceComponent
+  {
+    path: 'LEDDice',
+    component: LEDDiceComponent,
   },
-  { 
-    path: 'VBA', 
-    component: VBACalcComponent
+  {
+    path: 'VBA',
+    component: VBACalcComponent,
   },
-  { 
-    path: 'Biquadris', 
-    component: BiquadrisComponent
+  {
+    path: 'Biquadris',
+    component: BiquadrisComponent,
   },
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
   ],
-  exports: [RouterModule]
-  
+  exports: [RouterModule],
 })
-
-export class AppRoutingModule {
- }
-
+export class AppRoutingModule {}

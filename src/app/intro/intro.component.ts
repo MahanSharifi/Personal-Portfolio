@@ -4,45 +4,41 @@ import { GetApiService } from '../get-api.service';
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
-  styleUrls: ['./intro.component.css']
+  styleUrls: ['./intro.component.css'],
 })
 export class IntroComponent implements OnInit {
-
-  
   title = {
-    titleText:'',
-    titleHeader:''
+    titleText: '',
+    titleHeader: '',
   };
 
   University = {
     title: '',
-    about: ''
+    about: '',
   };
 
   tools = {
     title: '',
-    about: ''
+    about: '',
   };
 
   freeTime = {
     title: '',
-    about: ''
+    about: '',
   };
 
   lang = {
     title: '',
-    about: ''
+    about: '',
   };
 
   content = {
     data1: '',
     data2: '',
-    data3: ''
-  }
+    data3: '',
+  };
 
-
-  
-  constructor( public config: ConfigService ) { }
+  constructor(public config: ConfigService) {}
 
   ngOnInit(): void {
     this.title = this.config.getConfig().title;
@@ -52,7 +48,4 @@ export class IntroComponent implements OnInit {
     this.lang = this.config.getConfig().lang;
     this.content = this.config.getConfig().content;
   }
-
 }
-
-

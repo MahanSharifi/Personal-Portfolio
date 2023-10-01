@@ -1,24 +1,27 @@
 <nav id="nav-main">
-    <ul>
-        <li>
-            <a id="h" routerLink="/Home" routerLinkActive="active"
-            [routerLinkActiveOptions]={exact:true}
-            >Home
-            <h2></h2>
-            </a>
-        </li>
-        <li>
-            <a routerLink="/About" href="#about" routerLinkActive="active">About</a>
-        </li>
-        <li>
-            <a routerLink="/TECH" routerLinkActive="active">Internships</a>
-        </li>
-        <li>
-            <a routerLink="/Projects" routerLinkActive="active" >Projects</a>
-        </li>
-        <li>
-            <a routerLink="/Volunteer" routerLinkActive="active">Volunteer</a>
-        </li>
-        
-    </ul>
+  <ul>
+    <li>
+      <a
+        id="h"
+        routerLink="/Home"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home
+        <h2></h2>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/About" href="#about" routerLinkActive="active">About</a>
+    </li>
+    <li>
+      <a routerLink="/TECH" routerLinkActive="active">Internships</a>
+    </li>
+    <li>
+      <a routerLink="/Projects" routerLinkActive="active">Projects</a>
+    </li>
+    <li>
+      <a routerLink="/Volunteer" routerLinkActive="active">Volunteer</a>
+    </li>
+    <app-social></app-social>
+  </ul>
 </nav>

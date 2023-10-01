@@ -1,16 +1,13 @@
 button {
-    display: relative;
-    background-color: rgb(55, 49, 59);
-    color: white;
-    cursor: pointer;
-
+  display: relative;
+  background-color: rgb(55, 49, 59);
+  color: white;
+  cursor: pointer;
 }
 #button2 {
   background-color: white !important;
   color: black;
 }
-
-
 
 button:hover {
   opacity: 30%;
@@ -20,65 +17,58 @@ h4 {
   color: black;
 }
 
-
-  
- 
-  
- 
-
-  /* Add Animation */
-  @keyframes animatetop {
-    from {top: -800px; opacity: 0}
-    to {top: 0px; opacity: 1}
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -800px;
+    opacity: 0;
   }
-
-  .container2 .quote {
-    margin-left: 30px !important;
-    margin-bottom: 20px;
+  to {
+    top: 0px;
+    opacity: 1;
   }
+}
 
-
+.container2 .quote {
+  margin-left: 30px !important;
+  margin-bottom: 20px;
+}
 
 .container2 {
   z-index: 2;
   background: rgb(255, 255, 255);
   line-height: 40px;
   font-weight: lighter;
-  padding: 40px;
   color: rgb(0, 0, 0);
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container2 {
-  padding: 2em;
+  padding-right: 2em;
   grid-gap: 2em;
-  padding-top:0 !important;
-
+  padding-top: 0 !important;
 }
-
-
 
 .pages {
   display: flex;
 }
 article {
-  background:rgb(233, 229, 229);
+  background: rgb(233, 229, 229);
   grid-gap: 2em !important;
   border-radius: 1em !important;
 }
 
 article::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 2em;
   display: inline-block;
-
 }
 
 .left {
   grid-gap: 2em !important;
   border-radius: 1em !important;
-  width: 60%;
+  width: 100%;
 }
 
 .right {
@@ -93,7 +83,7 @@ article::after {
 }
 
 .pages {
-  background: linear-gradient(-135deg, transparent 1.5em, rgb(233, 229, 229)0);
+  background: linear-gradient(-135deg, transparent 1.5em, rgb(233, 229, 229) 0);
   margin-bottom: 1em !important;
   padding-bottom: 1em !important;
 }
@@ -104,7 +94,6 @@ article::after {
   background-color: rebeccapurple;
   background: linear-gradient(-135deg, transparent 1.5em, rebeccapurple 0);
 }
-  
 
 .close {
   color: transparent;
@@ -131,19 +120,18 @@ article::after {
   border-radius: 1em;
 }
 
-
-.maz {
+.maz2 {
   overflow: hidden;
   background-color: White;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 98%; /* Full width */
-  margin-left: -1%;
-  z-index: 99999999999999;
+  position: fixed;
+  top: 0;
+  width: 100.3%;
+  margin-left: -1em;
+  z-index: 1;
 }
 
 /* Links inside the navbar */
-.maz a {
+.maz2 a {
   float: left;
   display: block;
   color: Black;
@@ -153,8 +141,7 @@ article::after {
 }
 
 /* Change background on mouse-over */
-.maz a:hover {
-  
+.maz2 a:hover {
   color: black;
 }
 
@@ -187,7 +174,7 @@ nav-main {
 
 /*  */
 #nav-main li .fa {
-  transition: .6s;
+  transition: 0.6s;
   line-height: 0px;
 }
 
@@ -200,9 +187,9 @@ nav-main {
   margin: 10px 10px;
   border-radius: 0%;
   text-align: center;
-  line-height: 50px;    
+  line-height: 50px;
   height: 50px;
-  transition: .6s;
+  transition: 0.6s;
 }
 
 #nav-main li a:hover {
@@ -210,31 +197,29 @@ nav-main {
 }
 
 /*  */
-#nav-main li:nth-child(1) a:hover{
-  color: rebeccapurple;  
-}
-/*  */
-#nav-main li:nth-child(2) a:hover{
+#nav-main li:nth-child(1) a:hover {
   color: rebeccapurple;
 }
-
 /*  */
-#nav-main li:nth-child(3) a:hover{
+#nav-main li:nth-child(2) a:hover {
   color: rebeccapurple;
 }
 
 /*  */
-#nav-main li:nth-child(4) a:hover{
+#nav-main li:nth-child(3) a:hover {
   color: rebeccapurple;
 }
 
-#nav-main li:nth-child(5) a:hover{
+/*  */
+#nav-main li:nth-child(4) a:hover {
   color: rebeccapurple;
 }
 
+#nav-main li:nth-child(5) a:hover {
+  color: rebeccapurple;
+}
 
-#nav-main .active { 
+#nav-main .active {
   color: rebeccapurple !important ;
   text-decoration: underline 5px;
 }
-

@@ -1,187 +1,250 @@
 <div id="TECH" class="container2 txt">
-      
-      <div class="maz">
-        <div class="clearfix">
-            <div id="logo">
-                <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
-                
-            </div>
-            <app-social></app-social>
-            <app-navigation></app-navigation>
-            <div id="nav-box"><span></span></div>
-           <nav id="nav-content-pages"></nav>
-        </div>
+  <div class="maz">
+    <div class="clearfix">
+      <div id="logo">
+        <img
+          src="assets/images/logo-2.png"
+          id="first-logo"
+          alt="Landing Page"
+        />
+      </div>
+      <div id="nav-box"><span></span></div>
+      <nav id="nav-content-pages"></nav>
+
+      <app-navigation></app-navigation>
+    </div>
+  </div>
+
+  <h1>{{ tech.title }}</h1>
+  <h6>{{ tech.sub }}</h6>
+
+  <p class="ds">Descartes Systems Group - Software Dev Fall 2023</p>
+  <p class="ds">Descartes Systems Group - Software Dev Winter 2023</p>
+  <p class="uc">Uptake Canada - Full Stack Software Dev Summer 2022</p>
+  <p class="tt">Teranet - Software Dev Fall 2021</p>
+
+  <button
+    id="gooey-button3"
+    class="quote wow animateanimated animatepulse"
+    (click)="toggleDisplay4()"
+  >
+    Software Dev @ Descartes Systems Group <br />
+    Sept 2023 - Dec 2023
+    <span class="bubbles">
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+    </span>
+  </button>
+
+  <div [hidden]="displayed4" class="modalNew">
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="toggleDisplay4()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <article class="pagesDes">
+      <div class="quote right3">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>Descartes Systems Group</h1>
+            <h4>Jan 2023 -> May 2023</h4>
+            <p>Tools/Languages:</p>
           </div>
-
-      <h1>{{tech.title}}</h1>
-      <h6>{{tech.sub}}</h6>
-
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-                <filter id="gooey">
-                    <!-- in="sourceGraphic" -->
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
-                    <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
-                </filter>
-            </defs>
-        </svg>
-        <p class="ds">Descartes Systems Group - Software Dev Winter 2023</p>
-        <p class="uc">Uptake Canada - Full Stack Software Dev Summer 2022</p>
-        <p class="tt">Teranet - Software Dev Fall 2021</p>
-        
-        
-        
-        <button id="gooey-button3" class="quote wow animateanimated animatepulse"(click)="toggleDisplay3()">
-            Software Dev @ Descartes Systems Group <br> Jan 2023 - Apr. 2023
-            <span class="bubbles">
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-                <span class="bubble3"></span>
-
-            </span>
-
-        </button>
-
-
-
-
-      <div [hidden]="displayed3" class="modalNew">
-            <button type="button" class="close" aria-label="Close" (click)="toggleDisplay3()"><span aria-hidden="true">&times;</span></button>
-            <article class="pagesDes">
-                  <div class="quote right3">
-                              <div class="containerHalf">
-                                    <div class="DLP">
-                                          <h1>Descartes Systems Group</h1>
-                                          <h4>Jan 2023 -> May 2023</h4>
-                                          <p>Tools/Languages: TBD</p>
-                                      </div>
-                              </div>
-                  </div>
-
-                  <div class="left">
-                        <div class="containerLeft">
-                            <h2>Software Developer</h2>
-                            <li>TBD</li>
-                            <h4>For more information please contact me for my resume.</h4>
-                        </div>
-                  </div>
-            </article>
+        </div>
       </div>
-        
-        
-        <button id="gooey-button" class="quote wow animate__animated animate__pulse"(click)="toggleDisplay()">
-            {{uptake.title}} <br> {{uptake.date}}
-            <span class="bubbles">
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                
-            </span>
-        </button>
-      
-      
-  
-           
-      <div [hidden]="displayed" class="modalNew">
-            <button type="button" class="close" aria-label="Close" (click)="toggleDisplay()"><span aria-hidden="true">&times;</span></button>
-            <article class="pages">
-                  <div class="quote right">
-                              <div class="containerHalf">
-                                    <div class="DLP">
-                                          <h1>Uptake Canada</h1>
-                                          <h4>May 2022 -> Sept 2022</h4>
-                                          
-                                          <p>Tools: SQL, C#, Angular, .NET </p>
 
-                                          
-                                          
-                                      </div>
-                                      
-                                          
-                              </div>
-                  </div>
-
-                  <div class="left">
-                        <div class="containerLeft">
-                            <h2>Full Stack Developer</h2>
-                            <li>Developing and maintianing SQL objects, especially stored procedures.</li>
-                            <li>Creating Get/Post API Endpoints.</li>
-                            <li>Enhancements via angular and C++ for SPA.</li>
-                            <h4>For more information please contact me for my resume.</h4>
-                        </div>
-                  </div>
-            </article>
+      <div class="left">
+        <div class="containerLeft">
+          <h2>Software Developer</h2>
+          <li>
+            •	Concurrency Project TBD
+          </li>
+          <li>
+            •	TBD
+          </li>
+          <h4>For more information please contact me for my resume.</h4>
+        </div>
       </div>
-         
+    </article>
+  </div>
 
-      <button id="gooey-button2" (click)="toggleDisplay2()" [ngStyle]="{'background-color' : displayed ? '#90EE90' :'#90EE90'}" class="quote wow animate__animated animate__pulse">
-            {{coop.title}} <br> {{coop.date}}
-            <span class="bubbles2">
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                
-            </span>
-        </button>
-      
+  <button
+    id="gooey-button3"
+    class="quote wow animateanimated animatepulse"
+    (click)="toggleDisplay3()"
+  >
+    Software Dev @ Descartes Systems Group <br />
+    Jan 2023 - Apr. 2023
+    <span class="bubbles">
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+      <span class="bubble3"></span>
+    </span>
+  </button>
 
-      <div [hidden]="displayed2" class="modalNew" >
-            <button  class="close" aria-label="Close" (click)="toggleDisplay2()"><span aria-hidden="true">&times;</span></button>
-                  <article class="pagesTeranet">
-                        <div class="quote rightTeranet">
-                                    <div class="containerHalf">
-                                          <div class="DLP">
-                                                <h1>Teranet</h1>
-                                          <h4>Sept 2021 -> Dec 2021</h4>
-                                          
-                                          <p>Tools: SQL, C#, .NET Framwork, .NetCore, Dapper </p>
-                                            </div>
-                                            
-                                    </div>
-                        </div>
-      
-                        <div class="leftTeranet">
-                              <div class="containerLeft">
-                                    <h2>Software Developer</h2>
-                                    <li>Lead on JSON Parser Validator Program -> Developed, tested, deployed.</li>
-                                    <li>Fixed bugs and developed enhancements on C#, and .NET for front end and backend applications.</li>
-                                    <li>Completed integration and black box testing.</li>
-                                    <h4>For more information please contact me for my resume.</h4>
-                              </div>
-                        </div>
-                  </article>   
-            
-            
+  <div [hidden]="displayed3" class="modalNew">
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="toggleDisplay3()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <article class="pagesDes">
+      <div class="quote right3">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>Descartes Systems Group</h1>
+            <h4>Jan 2023 -> May 2023</h4>
+            <p>Tools/Languages: C#, .Net Core, JS, Blazor, MVC, SQL, XUnit</p>
+          </div>
+        </div>
       </div>
-        
-          
-      
 
-          
-          
+      <div class="left">
+        <div class="containerLeft">
+          <h2>Software Developer</h2>
+          <li>
+            •	Developed and designed a new application independently to streamline communication between Product Managers and employees, enabling seamless notification delivery to over 60 internal applications.
+          </li>
+          <li>•	Spearheaded the development of GAAR, an application enabling managers to audit accounts across the active directory. Took charge of critical components, including DB calls, API endpoints, and explicit parameters.</li>
+          <li>•	Lead developer in a Design Sprint to help design a landing page for all internal OneFace applications.</li>
+          <h4>For more information please contact me for my resume.</h4>
+        </div>
+      </div>
+    </article>
+  </div>
 
-          
+  <button
+    id="gooey-button"
+    class="quote wow animate__animated animate__pulse"
+    (click)="toggleDisplay()"
+  >
+    {{ uptake.title }} <br />
+    {{ uptake.date }}
+    <span class="bubbles">
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+    </span>
+  </button>
+
+  <div [hidden]="displayed" class="modalNew">
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="toggleDisplay()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <article class="pages">
+      <div class="quote right">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>Uptake Canada</h1>
+            <h4>May 2022 -> Sept 2022</h4>
+
+            <p>Tools: SQL, C#, Angular, .NET</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="containerLeft">
+          <h2>Full Stack Developer</h2>
+          <li>
+            Developing and maintianing SQL objects, especially stored
+            procedures.
+          </li>
+          <li>Creating Get/Post API Endpoints.</li>
+          <li>Enhancements via angular and C++ for SPA.</li>
+          <h4>For more information please contact me for my resume.</h4>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <button
+    id="gooey-button2"
+    (click)="toggleDisplay2()"
+    [ngStyle]="{ 'background-color': displayed ? '#90EE90' : '#90EE90' }"
+    class="quote wow animate__animated animate__pulse"
+  >
+    {{ coop.title }} <br />
+    {{ coop.date }}
+    <span class="bubbles2">
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+    </span>
+  </button>
+
+  <div [hidden]="displayed2" class="modalNew">
+    <button class="close" aria-label="Close" (click)="toggleDisplay2()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <article class="pagesTeranet">
+      <div class="quote rightTeranet">
+        <div class="containerHalf">
+          <div class="DLP">
+            <h1>Teranet</h1>
+            <h4>Sept 2021 -> Dec 2021</h4>
+
+            <p>Tools: SQL, C#, .NET Framwork, .NetCore, Dapper</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="leftTeranet">
+        <div class="containerLeft">
+          <h2>Software Developer</h2>
+          <li>
+            Lead on JSON Parser Validator Program -> Developed, tested,
+            deployed.
+          </li>
+          <li>
+            Fixed bugs and developed enhancements on C#, and .NET for front end
+            and backend applications.
+          </li>
+          <li>Completed integration and black box testing.</li>
+          <h4>For more information please contact me for my resume.</h4>
+        </div>
+      </div>
+    </article>
+  </div>
 </div>
 <router-outlet></router-outlet>

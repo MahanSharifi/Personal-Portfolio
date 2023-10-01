@@ -8,9 +8,8 @@ describe('LEDDiceComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LEDDiceComponent ]
-    })
-    .compileComponents();
+      declarations: [LEDDiceComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

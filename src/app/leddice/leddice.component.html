@@ -1,23 +1,31 @@
 <!--Electronic Dice Created-->
 
 <div class="container2">
-
-    <div class="maz">
-        <div class="clearfix" >
-        <div id="logo">
-            <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
-            
-        </div>
-        <app-navigation></app-navigation>
-        <div id="nav-box"><span></span></div>
-       <nav id="nav-content-pages"></nav>
-        </div>
+  <div class="maz">
+    <div class="clearfix">
+      <div id="logo">
+        <img
+          src="assets/images/logo-2.png"
+          id="first-logo"
+          alt="Landing Page"
+        />
       </div>
-    <div id="LEDDice" class="quote" >
-        <h3>{{dice.title}}s<p>{{dice.date}}</p></h3>
-        <p>{{dice.contentA}}
-            <p class="wow"><img src="assets/images/gallery-images/ED.jpg" class="responsive"></p>
-        <p class="caption"><br>{{dice.caption}}</p>
+      <div id="nav-box"><span></span></div>
+      <nav id="nav-content-pages"></nav>
+
+      <app-navigation></app-navigation>
     </div>
+  </div>
+  <div id="LEDDice" class="quote">
+    <h3>
+      {{ dice.title }}s
+      <p>{{ dice.date }}</p>
+    </h3>
+    <p>{{ dice.contentA }}</p>
+    <p class="wow">
+      <img src="assets/images/gallery-images/ED.jpg" class="responsive" />
+    </p>
+    <p class="caption"><br />{{ dice.caption }}</p>
+  </div>
 </div>
 <!--Electronic Dice Finished-->

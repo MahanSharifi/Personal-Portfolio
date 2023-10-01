@@ -1,266 +1,437 @@
-<section id="Projects" class="txt scrollto clearfix " data-enllax-ratio="0.2">
-   <div class="maz">
+<section id="Projects" class="txt scrollto clearfix" data-enllax-ratio="0.2">
+  <div class="maz2">
     <div class="clearfix">
-        <div id="logo">
-            <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
-            
-        </div>
-        <app-social></app-social>
-        <app-navigation></app-navigation>
-        <div id="nav-box"><span></span></div>
-       <nav id="nav-content-pages"></nav>
-    </div>
+      <div id="logo">
+        <img
+          src="assets/images/logo-2.png"
+          id="first-logo"
+          alt="Landing Page"
+        />
       </div>
+      <div id="nav-box"><span></span></div>
+      <nav id="nav-content-pages"></nav>
 
-      <div class="argument clearfix" data-enllax-ratio="0.2">
-        <div>
-            <h3>:)(:</h3>
-            <h2>Projects</h2>
-            <h6>CLICK GITHUB FOR CODE OR CLICK PROJECT BOX FOR MORE DETAIL</h6>
-        </div>
-        <div class="cont">
-      <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="0.4s">
-                <div class="projBoxContent" >
-                        
-                    <h3>Personal AI</h3>
-                    <h6>Presently</h6>
-                    <p class="projSub"></p>
-                    <div class="projContent">
-                        <div class="">
-                            <img src="">
-                        </div>
-                        <p>
-                             <br>
-                            <br>        
-                            <br> 
-                        </p>
-                        Currently Working On!
-                        <BR>
-                    </div>
-                
-                <div class="gitHub">
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="0.4s">
-            <div class="projBoxContent" >
-                    
-                <h3>To-Do List</h3>
-                <h6>December 2022</h6>
-                <p class="projSub">Kotlin, Jetpack Compose, AWS Cognito/API Gateway/DynamoDB/Lambda, GSON, H2,
-                    Native Parameter Store Acess.
-                </p>
-                <div class="projContent">
-                    <div class="">
-                        <img src="assets/images/gallery-images/TISK.jpg">
-                    </div>
-                    <p> •  Cross platform desktop application with Kotlin, and AWS with Windows and Mac Installers.
-<br>
-                        •                Developed a Jdbc H2 database with AWS Cognito to provide offline mode for each user, and allow online sync between devices for users.
-                        <br>
-                        •                AWS lambda, API Gateway and DynamoDB for online db to support Post, Put, Delete, and Get requests. 
-                        <br>
-                        •                Responsive UI with Jetpack Compose and developed a custom calendar/date picker due to composes freshness.
-                        <br>
-                        •                Native Parameter Store Access used to detect current desktop mode (Dark/Light Mode).
-                         <br>
-                        <br>        
-                        <br> 
-                    </p>
-                    CODE AVAILABLE UPON REQUEST
-                    <BR>
-                </div>
-            
-            <div class="gitHub">
-                <a target="_blank" title="GitHub" href="https://github.com/MahanSharifi/TDL">
-                    <i class="fa fa-github fa-2x"></i>
-                </a>
-            </div>
-        </div>
+      <app-navigation></app-navigation>
     </div>
-
-
-    <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="0.6s">
+  </div>
+  <div class="argument clearfix" data-enllax-ratio="0.2">
+    <div>
+      <h3>:)(:</h3>
+      <h2>Projects</h2>
+      <h6>CLICK GITHUB FOR CODE OR CLICK PROJECT BOX FOR MORE DETAIL</h6>
+    </div>
+    <div class="cont">
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.4s"
+      >
         <div class="projBoxContent">
-            
-            <h3>{{wlp4.title}}</h3>
-            <h6>{{wlp4.date}}</h6>
-            <p class="projSub">{{wlp4.tools}}</p>
-            <div class="projContent">
-                <div class="">
-                    <img src="assets/images/gallery-images/WLP4.jpg">
-                </div>
-                <p>{{wlp4.content}}
-                    
-                    <br>
-                    <br>
-                    
-                    </p>
-                    CODE AVAILABLE UPON REQUEST
+          <h3>Motive: Design Portfolio</h3>
+          <h6>August 2023</h6>
+          <p class="projSub">
+            Figma, Design Methodologies
+          </p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/gallery-images/Motive.jpg" />
             </div>
-            
-            <div class="gitHub">
-                
-            </div>
+            <p>
+              {{designPort.statement}}
+              <br />
+              {{designPort.issue1}}
+              <br />
+              {{designPort.issue2}}
+              <br />
+              {{designPort.issue3}}
+            </p>
+            <br/>
+          </div>
+
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://sites.google.com/view/motive-app/home"
+            >
+              <i class="fa fa-link fa-2x"></i>
+            </a>
+          </div>
         </div>
-    </div>
       </div>
-   
-    <div class="argument clearfix" data-enllax-ratio="0.2">
-        
-        
+
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.6s"
+      >
+        <div class="projBoxContent">
+          <h3>MetaSplit</h3>
+          <h6>July 2023</h6>
+          <p class="projSub">
+            React, Gen. AI (Open AI API), MetaMask SDK, JS, TS
+          </p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/gallery-images/MetaMask.jpg" />
+            </div>
+            <p>
+              MetaSplit is a cutting-edge React application that leverages the power of AI (using the OpenAI API) and integrates with MetaMask to revolutionize group transactions, particularly for carpooling scenarios. By employing advanced algorithms and AI capabilities, MetaSplit accurately calculates equal payments, taking into account car mileage, distance traveled, and gas prices.
 
 
+              <br />
+              <br />
+              <br />
+            </p>
             
-        
-        <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="0.4s">
-                <div class="projBoxContent" >
-                        
-                    <h3>{{jSon.title}}</h3>
-                    <h6>{{jSon.date}}</h6>
-                    <p class="projSub">{{jSon.tools}}</p>
-                    <div class="projContent">
-                        <div class="">
-                            <img src="assets/images/gallery-images/JsonParser.jpg">
-                        </div>
-                        <p>{{jSon.content}}
-                             <br>
-                            <br>        
-                            <br> 
-                        </p>
-                        CODE AVAILABLE UPON REQUEST
-                        <BR>
-                    </div>
-                
-                <div class="gitHub">
-                    
-                </div>
-            </div>
-        </div>
+            <BR />
+          </div>
 
-        <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="0.6s">
-            <div class="projBoxContent">
-                <a routerLink="/Biquadris">
-                <h3>{{biqq.title}}</h3>
-                <h6>{{biqq.date}}</h6>
-                <p class="projSub">{{biqq.tools}}</p>
-                <div class="projContent">
-                    <div class="">
-                        <img src="assets/images/gallery-images/biquadris.jpg">
-                    </div>
-                    <p>{{biqq.content}}<br>
-                        {{biqq.contentB}}<br>
-                        <br>
-                        <br>
-                        
-                        </p>
-                        CODE AVAILABLE UPON REQUEST
-                </div>
-                </a>
-                <div class="gitHub">
-                    
-                </div>
-            </div>
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://github.com/MahanSharifi/MetaMask"
+            >
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
         </div>
+      </div>
 
-        
-        <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="0.8s">
-            <div class="projBoxContent">
-                <h3>{{web.title}} </h3>
-                <h6>{{web.date}}</h6>
-                <p class="projSub"> {{web.tools}}, TS.ParticleJS. </p>
-                <div class="projContent">
-                    <div class="">
-                        <img src="assets/images/gallery-images/Websi.jpg">
-                    </div>
-                    <p>{{web.content}}
-                     <br>
-                        <br>
-                        <br>
-                        </p>
-                        AS SEEN :)
-                </div>
-                <div class="gitHub">
-                    <a target="_blank" title="GitHub" href="https://github.com/MahanSharifi/PersonalWebsite3.0">
-                        <i class="fa fa-github fa-2x"></i>
-                    </a>
-                </div>
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.8s"
+      >
+        <div class="projBoxContent">
+          <h3>Congestion Controlled Pipelined RDT Protocol Over UDP</h3>
+          <h6>July 2023</h6>
+          <p class="projSub">
+            Python, lib.socket.py
+          </p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/GalleryImages/Capture441.jpg" />
             </div>
+            <p>
+            The protocal could be used to transfer a text file from one host to another across an
+unreliable network. The protocol is able to handle packet loss, packet reordering, and duplicate
+packets. The protocol is unidirectional, i.e., data will flow in one direction (from the
+sender to the receiver) and the acknowledgements (ACKs, i.e., control messages) in the opposite
+direction.
+              <br />
+              <br />
+              <br />
+            </p>
+            
+            <BR />
+          </div>
+
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://github.com/MahanSharifi/MetaMask"
+            >
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
         </div>
+      </div>
+
+
+
+      <div class="cont2">
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.4s"
+      >
+        <div class="projBoxContent">
+          <h3>Google Page Rank Algorithm</h3>
+          <h6>July 2023</h6>
+          <p class="projSub">
+            Python, NumPy, scipy.sparse, Linear Algebra
+          </p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/GalleryImages/pageRank.jpg" />
+            </div>
+            <p>
+              <br />
+              <br />
+              <br />
+            </p>
+            
+            <BR />
+          </div>
+
+          <div class="gitHub"></div>
+        </div>
+      </div>
+
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.6s"
+      >
+        <div class="projBoxContent">
+          <h3>To-Do List</h3>
+          <h6>December 2022</h6>
+          <p class="projSub">
+            Kotlin, Jetpack Compose, AWS Cognito/API Gateway/DynamoDB/Lambda,
+            GSON, H2, Native Parameter Store Acess.
+          </p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/gallery-images/TISK.jpg" />
+            </div>
+            <p>
+              • Cross platform desktop application with Kotlin, and AWS with
+              Windows and Mac Installers.
+              <br />
+              • Developed a Jdbc H2 database with AWS Cognito to provide offline
+              mode for each user, and allow online sync between devices for
+              users.
+              <br />
+              • AWS lambda, API Gateway and DynamoDB for online db to support
+              Post, Put, Delete, and Get requests.
+              <br />
+              • Responsive UI with Jetpack Compose and developed a custom
+              calendar/date picker due to composes freshness.
+              <br />
+              • Native Parameter Store Access used to detect current desktop
+              mode (Dark/Light Mode).
+              <br />
+              <br />
+              <br />
+            </p>
+            CODE AVAILABLE UPON REQUEST
+            <BR />
+          </div>
+
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://github.com/MahanSharifi/TDL"
+            >
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.8s"
+      >
+        <div class="projBoxContent">
+          <h3>{{ wlp4.title }}</h3>
+          <h6>{{ wlp4.date }}</h6>
+          <p class="projSub">{{ wlp4.tools }}</p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/gallery-images/WLP4.jpg" />
+            </div>
+            <p>
+              {{ wlp4.content }}
+
+              <br />
+              <br />
+            </p>
+            CODE AVAILABLE UPON REQUEST
+          </div>
+
+          <div class="gitHub"></div>
+        </div>
+      </div>
     </div>
+  </div>
+
+
+
 
     <div class="cont2">
-        <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="1.0s">
-            <div class="projBoxContent">
-                <a routerLink="/LEDDice">
-                <h3>{{led.title}}</h3>
-                <h6>{{led.date}}</h6>
-                <p class="projSub"> {{led.tools}} </p>
-                <div class="projContent">
-                    <div class="">
-                        <img src="assets/images/gallery-images/ED.jpg">
-                    </div>
-                    <p>{{led.content}}</p>
-                        <br>
-                        <br>
-                        CLICK ME FOR MORE
-                </div>
-                </a>
-                <div class="gitHub">
-                    <a target="_blank" title="GitHub" href="https://github.com/MahanSharifi/LED-Dice">
-                        <i class="fa fa-github fa-2x"></i>
-                    </a>
-                </div>
+    <div class="argument clearfix" data-enllax-ratio="0.2">
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.4s"
+      >
+        <div class="projBoxContent">
+          <h3>{{ jSon.title }}</h3>
+          <h6>{{ jSon.date }}</h6>
+          <p class="projSub">{{ jSon.tools }}</p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/gallery-images/JsonParser.jpg" />
             </div>
-        </div>
-        
-        <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="1.2s">
-            <div class="projBoxContent">
-                <a routerLink="/VBA">
-                <h3>{{vba.title}} </h3>
-                <h6>{{vba.date}}</h6>
-                <p class="projSub">{{vba.tools}} </p>
-                <div class="projContent">
-                    <div class="">
-                        <img src="assets/images/gallery-images/quad grid.jpg">
-                    </div>
-                    <p>{{vba.content}}<br>
-                        {{vba.contentB}}<br>
-                        </p>
-                        <br>
-                        <br>
-                        CLICK ME FOR MORE
-                </div>
-                </a>
-                <div class="gitHub">
-                    <a target="_blank" title="GitHub" href="https://github.com/MahanSharifi/VBA-Math-Calculator">
-                        <i class="fa fa-github fa-2x"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+            <p>
+              {{ jSon.content }}
+              <br />
+              <br />
+              <br />
+            </p>
+            CODE AVAILABLE UPON REQUEST
+            <BR />
+          </div>
 
-        <div class="projBox col-about wow animate__animated animate__pulse" data-wow-delay="1.4s">
-            <div class="projBoxContent">
-                <h3>{{rock.title}} </h3>
-                <h6>{{rock.date}}</h6>
-                <p class="projSub">{{rock.tools}} </p>
-                <div class="projContent">
-                    <p>{{rock.content}} <br>
-                        {{rock.contentB}}</p>
-                </div>
-                <div class="gitHub">
-                    <a target="_blank" title="GitHub" href="https://github.com/MahanSharifi/Rock-Paper-Scissors">
-                        <i class="fa fa-github fa-2x"></i>
-                    </a>
-                </div>
-            </div>
+          <div class="gitHub"></div>
         </div>
+      </div>
+
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.6s"
+      >
+        <div class="projBoxContent">
+          <a routerLink="/Biquadris">
+            <h3>{{ biqq.title }}</h3>
+            <h6>{{ biqq.date }}</h6>
+            <p class="projSub">{{ biqq.tools }}</p>
+            <div class="projContent">
+              <div class="">
+                <img src="assets/images/gallery-images/biquadris.jpg" />
+              </div>
+              <p>
+                {{ biqq.content }}<br />
+                {{ biqq.contentB }}<br />
+                <br />
+                <br />
+              </p>
+              CODE AVAILABLE UPON REQUEST
+            </div>
+          </a>
+          <div class="gitHub"></div>
+        </div>
+      </div>
+
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.8s"
+      >
+        <div class="projBoxContent">
+          <h3>{{ web.title }}</h3>
+          <h6>{{ web.date }}</h6>
+          <p class="projSub">{{ web.tools }}, TS.ParticleJS.</p>
+          <div class="projContent">
+            <div class="">
+              <img src="assets/images/gallery-images/Websi.jpg" />
+            </div>
+            <p>
+              {{ web.content }}
+              <br />
+              <br />
+              <br />
+            </p>
+            AS SEEN :)
+          </div>
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://github.com/MahanSharifi/PersonalWebsite3.0"
+            >
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+
+
+
+
+    <div class="cont2">
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.4s"
+      >
+        <div class="projBoxContent">
+          <a routerLink="/LEDDice">
+            <h3>{{ led.title }}</h3>
+            <h6>{{ led.date }}</h6>
+            <p class="projSub">{{ led.tools }}</p>
+            <div class="projContent">
+              <div class="">
+                <img src="assets/images/gallery-images/ED.jpg" />
+              </div>
+              <p>{{ led.content }}</p>
+              <br />
+              <br />
+              CLICK ME FOR MORE
+            </div>
+          </a>
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://github.com/MahanSharifi/LED-Dice"
+            >
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.6s"
+      >
+        <div class="projBoxContent">
+          <a routerLink="/VBA">
+            <h3>{{ vba.title }}</h3>
+            <h6>{{ vba.date }}</h6>
+            <p class="projSub">{{ vba.tools }}</p>
+            <div class="projContent">
+              <div class="">
+                <img src="assets/images/gallery-images/quad grid.jpg" />
+              </div>
+              <p>
+                {{ vba.content }}<br />
+                {{ vba.contentB }}<br />
+              </p>
+              <br />
+              <br />
+              CLICK ME FOR MORE
+            </div>
+          </a>
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://github.com/MahanSharifi/VBA-Math-Calculator"
+            >
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="projBox col-about wow animate__animated animate__flipInY"
+        data-wow-delay="0.8s"
+      >
+        <div class="projBoxContent">
+          <h3>{{ rock.title }}</h3>
+          <h6>{{ rock.date }}</h6>
+          <p class="projSub">{{ rock.tools }}</p>
+          <div class="projContent">
+            <p>
+              {{ rock.content }} <br />
+              {{ rock.contentB }}
+            </p>
+          </div>
+          <div class="gitHub">
+            <a
+              target="_blank"
+              title="GitHub"
+              href="https://github.com/MahanSharifi/Rock-Paper-Scissors"
+            >
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 <router-outlet></router-outlet>
-
-

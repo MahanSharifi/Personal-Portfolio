@@ -4,52 +4,58 @@ import { ConfigService } from '../config.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
-
   jSon = {
     title: '',
     date: '',
     tools: '',
     content: '',
-  }
+  };
 
   wlp4 = {
     title: '',
     date: '',
     tools: '',
     content: '',
-  }
+  };
 
   biqq = {
     title: '',
     date: '',
     tools: '',
     content: '',
-    contentB: ''
-  }
+    contentB: '',
+  };
 
   web = {
     title: '',
     date: '',
     tools: '',
     content: '',
-  }
-  
+  };
+
   led = {
     title: '',
     date: '',
     tools: '',
     content: '',
-  }
-  
+  };
+
   vba = {
     title: '',
     date: '',
     tools: '',
     content: '',
-    contentB: ''
+    contentB: '',
+  };
+
+  designPort = {
+    statement: '',
+    issue1: '',
+    issue2: '',
+    issue3: '',
   }
 
   rock = {
@@ -57,10 +63,10 @@ export class ProjectsComponent implements OnInit {
     date: '',
     tools: '',
     content: '',
-    contentB: ''
-  }
+    contentB: '',
+  };
 
-  constructor( public config: ConfigService ) { }
+  constructor(public config: ConfigService) {}
 
   ngOnInit(): void {
     this.jSon = this.config.getConfig().jSon;
@@ -69,8 +75,7 @@ export class ProjectsComponent implements OnInit {
     this.web = this.config.getConfig().web;
     this.led = this.config.getConfig().led;
     this.vba = this.config.getConfig().vba;
+    this.designPort = this.config.getConfig().designPort;
     this.rock = this.config.getConfig().rock;
-
   }
-
 }

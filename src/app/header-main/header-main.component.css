@@ -1,22 +1,4 @@
-#maz2 {
-    font-size: 13px;
-    margin-top: -10px !important;
-}
-
-#maz2 {
-    overflow: visible;
-    z-index: 9999;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    opacity: 100;
-    position: fixed !important;
-    
-    transition: all 300ms ease !important;
-    
-}
-
-
-#header .argument {
+/*#header .argument {
     padding: 0;
 }
 
@@ -54,3 +36,4 @@
     border-bottom: 3px solid;
     border-color: #fff;
 }
+*/

@@ -1,25 +1,44 @@
-<div class="container2 ">
-    <div class="maz">
-        <div class="clearfix">
-        <div id="logo">
-            <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
-            
-        </div>
-        <app-navigation></app-navigation>
-         <div id="nav-box"><span></span></div>
-        <nav id="nav-content-pages"></nav>
+<div class="container2">
+  <div class="maz">
+    <div class="clearfix">
+      <div id="logo">
+        <img
+          src="assets/images/logo-2.png"
+          id="first-logo"
+          alt="Landing Page"
+        />
       </div>
+      <div id="nav-box"><span></span></div>
+      <nav id="nav-content-pages"></nav>
+
+      <app-navigation></app-navigation>
     </div>
-    <div id="Biquadris" class="quote" >
-        <h3>{{biq.title}}<p>{{biq.date}}</p></h3>
-        <h6>For access to code, design pdf, and uml, please send me an <a href="mailto: mahan9879@gmail.com">email me</a></h6>
-        <p>{{biq.contentA}} <br>
-            {{biq.contentB}}<br>
-            {{biq.contentC}}
-            <br>
-            {{biq.contentD}}
-            <br>        
-            <p class="wow txt"><img src="assets/images/gallery-images/biquadris.jpg" class="responsive"></p>
-        <p class="caption"><br>{{biq.caption}}</p>
-    </div>
+  </div>
+
+  <div id="Biquadris" class="quote">
+    <h3>
+      {{ biq.title }}
+      <p>{{ biq.date }}</p>
+    </h3>
+    <h6>
+      For access to code, design pdf, and uml, please send me an
+      <a href="mailto: mahan9879@gmail.com">email me</a>
+    </h6>
+    <p>
+      {{ biq.contentA }} <br />
+      {{ biq.contentB }}<br />
+      {{ biq.contentC }}
+      <br />
+      {{ biq.contentD }}
+      <br />
+    </p>
+
+    <p class="wow txt">
+      <img
+        src="assets/images/gallery-images/biquadris.jpg"
+        class="responsive"
+      />
+    </p>
+    <p class="caption"><br />{{ biq.caption }}</p>
+  </div>
 </div>

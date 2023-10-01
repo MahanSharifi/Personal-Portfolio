@@ -1,31 +1,33 @@
-button{
+button {
   cursor: pointer;
   margin-right: 1em;
 }
-
-
 
 #button2 {
   color: black !important;
 }
 
-  .quoteCustom:hover {
-    opacity: 30%;
-  }
-  
-  /* Add Animation */
-  @keyframes animatetop {
-    from {top: -800px; opacity: 0}
-    to {top: 0px; opacity: 1}
-  }
+.quoteCustom:hover {
+  opacity: 30%;
+}
 
-
-
-  .container2 .quote {
-    margin-left: 30px !important;
-    margin-bottom: 20px;
-    margin-top: 0px;
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -800px;
+    opacity: 0;
   }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.container2 .quote {
+  margin-left: 30px !important;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
 
 .container2 {
   z-index: 2;
@@ -35,15 +37,14 @@ button{
   padding: 40px;
   padding-top: 0px !important;
   color: rgb(0, 0, 0);
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container2 {
   padding: 2em;
   grid-gap: 2em;
-  padding-top:10em;
+  padding-top: 10em;
 }
-
 
 .modalNew {
   padding-bottom: 2em;
@@ -53,17 +54,16 @@ button{
   display: flex;
 }
 article {
-  background:rgb(233, 229, 229);
+  background: rgb(233, 229, 229);
   grid-gap: 2em !important;
   border-radius: 1em !important;
 }
 
 article::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 2em;
   display: inline-block;
-
 }
 
 .left {
@@ -84,7 +84,7 @@ article::after {
 }
 
 .pages {
-  background: linear-gradient(-135deg, transparent 1.5em, rgb(233, 229, 229)0);
+  background: linear-gradient(-135deg, transparent 1.5em, rgb(233, 229, 229) 0);
 }
 
 .pages::after {
@@ -93,7 +93,6 @@ article::after {
   background-color: #719cf8;
   background: linear-gradient(-135deg, transparent 1.5em, #719cf8 0);
 }
-  
 
 .close {
   color: transparent;
@@ -120,24 +119,25 @@ article::after {
   border-radius: 1em;
 }
 
-
 .leftTeranet {
   grid-gap: 2em !important;
   border-radius: 1em !important;
   width: 60%;
   padding: 1em;
-  
 }
 
 .rightTeranet {
-  width:40%;
-  background: #90EE90;
+  width: 40%;
+  background: #90ee90;
   grid-gap: 2em !important;
   border-radius: 1em !important;
   color: white;
   font: white;
-  
+  margin-top: 1em !important;
+  padding-top: 1em !important;
 }
+
+
 .right3 {
   width: 40%;
   background: #a5c2ff;
@@ -150,13 +150,13 @@ article::after {
 
 .pagesTeranet {
   display: flex;
-  background: linear-gradient(-135deg, transparent 1.5em, rgb(233, 229, 229)0);
+  background: linear-gradient(-135deg, transparent 1.5em, rgb(233, 229, 229) 0);
 }
 
 .pagesTeranet::after {
   width: 2.13em;
   height: 2.13em;
-  background: linear-gradient(-135deg, transparent 1.5em, #90EE90 0);
+  background: linear-gradient(-135deg, transparent 1.5em, #90ee90 0);
 }
 
 .quote {
@@ -172,7 +172,11 @@ article::after {
 
 .pagesDes {
   display: flex;
-  background: linear-gradient(-135deg, transparent 1.5em, rgb(233,229,229) 0) !important;
+  background: linear-gradient(
+    -135deg,
+    transparent 1.5em,
+    rgb(233, 229, 229) 0
+  ) !important;
 }
 
 .pagesDes::after {
@@ -182,13 +186,9 @@ article::after {
   background: linear-gradient(-135deg, transparent 1.5em, #a5c2ff 0) !important;
 }
 
-
-
 svg {
   position: absolute;
 }
-
-
 
 #gooey-button {
   padding: 1rem;
@@ -197,26 +197,28 @@ svg {
   color: #0c1016;
   filter: url("#gooey");
   position: relative;
-  background-color: #719cf8; }
-  #gooey-button:focus {
-    outline: none; }
-  #gooey-button .bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
-    #gooey-button .bubbles .bubble {
-      background-color: #719cf8;
-      border-radius: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      z-index: -1; }
-      
+  background-color: #719cf8;
+}
+#gooey-button:focus {
+  outline: none;
+}
+#gooey-button .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#gooey-button .bubbles .bubble {
+  background-color: #719cf8;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
 
- 
 #gooey-button2 {
   padding: 1rem;
   font-size: 1rem;
@@ -224,69 +226,65 @@ svg {
   color: #0c1016 !important;
   filter: url("#gooey");
   position: relative;
-  background-color: #90EE90; }
-  #gooey-button2:focus {
-    outline: none; }
-  #gooey-button2 .bubbles2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
-    #gooey-button2 .bubbles2 .bubble {
-      background-color: #90EE90;
-      border-radius: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      z-index: -1; }
-      
+  background-color: #90ee90;
+}
+#gooey-button2:focus {
+  outline: none;
+}
+#gooey-button2 .bubbles2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#gooey-button2 .bubbles2 .bubble {
+  background-color: #90ee90;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
 
+#gooey-button3 {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  color: #0c1016 !important;
+  filter: url("#gooey");
+  position: relative;
+  background-color: #a5c2ff;
+}
+#gooey-button3:focus {
+  outline: none;
+}
+#gooey-button3 .bubbles3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#gooey-button3 .bubbles3 .bubble {
+  background-color: #a5c2ff !;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
 
-
-
-        #gooey-button3 {
-          padding: 1rem;
-          font-size: 1rem;
-          border: none;
-          color: #0c1016 !important;
-          filter: url("#gooey");
-          position: relative;
-          background-color: #a5c2ff; }
-          #gooey-button3:focus {
-            outline: none; }
-          #gooey-button3 .bubbles3 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0; }
-            #gooey-button3 .bubbles3 .bubble {
-              background-color: #a5c2ff !;
-              border-radius: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              display: block;
-              z-index: -1; }
-           
-
-
-
-
-
-
-
-
-.ds  {
+.ds {
   color: #a5c2ff;
   font-weight: bolder !important;
   font-size: 1.2em;
   display: relative;
 }
 
-.uc  {
+.uc {
   color: #719cf8;
   font-weight: bolder !important;
   font-size: 1.2em;
@@ -294,24 +292,20 @@ svg {
 }
 
 .tt {
-  color: #90EE90;
+  color: #90ee90;
   font-weight: bolder !important;
   font-size: 1.2em;
   display: relative;
 }
 
-
-
-
 .maz {
   overflow: hidden;
   background-color: White;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 98%; /* Full width */
-  margin-left: -1%;
-  
-  z-index: 99999999999999;
+  position: fixed;
+  top: 0;
+  width: 100.3%;
+  margin-left: -3em;
+  z-index: 1;
 }
 
 /* Links inside the navbar */
@@ -326,7 +320,6 @@ svg {
 
 /* Change background on mouse-over */
 .maz a:hover {
-  
   color: black;
 }
 
@@ -359,54 +352,42 @@ nav-main {
 
 /*  */
 #nav-main li .fa {
-  transition: .6s;
+  transition: 0.6s;
   line-height: 0px;
 }
 
 /*  */
 
 /*  */
-#nav-main li a {
-  position: relative;
-  display: block;
-  margin: 10px 10px;
-  border-radius: 0%;
-  text-align: center;
-  line-height: 50px;    
-  height: 50px;
-  transition: .6s;
-}
 
 #nav-main li a:hover {
   transform: translate(0, -10px);
 }
 
 /*  */
-#nav-main li:nth-child(1) a:hover{
-  color: rebeccapurple;  
-}
-/*  */
-#nav-main li:nth-child(2) a:hover{
+#nav-main li:nth-child(1) a:hover {
   color: rebeccapurple;
 }
-
 /*  */
-#nav-main li:nth-child(3) a:hover{
+#nav-main li:nth-child(2) a:hover {
   color: rebeccapurple;
 }
 
 /*  */
-#nav-main li:nth-child(4) a:hover{
+#nav-main li:nth-child(3) a:hover {
   color: rebeccapurple;
 }
 
-#nav-main li:nth-child(5) a:hover{
+/*  */
+#nav-main li:nth-child(4) a:hover {
   color: rebeccapurple;
 }
 
+#nav-main li:nth-child(5) a:hover {
+  color: rebeccapurple;
+}
 
-#nav-main .active { 
+#nav-main .active {
   color: rebeccapurple !important ;
   text-decoration: underline 5px;
 }
-

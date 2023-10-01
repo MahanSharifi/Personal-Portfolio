@@ -1,88 +1,91 @@
 <!--Visual Basics Created-->
 
-
 <div id="VBA" class="container2">
-    <div class="maz">
-        <div id="logo">
-            <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
-            
-        </div>
-        <nav id="nav-main">
-            <ul>
-                <li>
-                    <a id="h" routerLink="/Home" routerLinkActive="active"
-                    [routerLinkActiveOptions]={exact:true}
-                    >Home
-                    <h2></h2>
-                    </a>
-                </li>
-                <li>
-                    <a routerLink="/About" href="#about" routerLinkActive="active">About</a>
-                </li>
-                <li>
-                    <a routerLink="/TECH" routerLinkActive="active">Internships</a>
-                </li>
-                <li>
-                    <a routerLink="/Projects" routerLinkActive="active" >Projects</a>
-                </li>
-                <li>
-                    <a routerLink="/Volunteer" routerLinkActive="active">Volunteer</a>
-                </li>
-                <li class="socialHead">
-                    <app-social></app-social>
-                </li>
-            </ul>
-        </nav>
+  <div class="maz">
+    <div class="clearfix">
+      <div id="logo">
+        <img
+          src="assets/images/logo-2.png"
+          id="first-logo"
+          alt="Landing Page"
+        />
       </div>
-<div class="quote2">
-    <h3>{{vb.title}}<p>{{vb.date}}</p></h3>
-        <a href="https://github.com/MahanSharifi/Math-Calculator-for-Different-Functions" target="_blank">GitHub Code
-        </a>
-        <p> {{vb.contentA}}
-            <br>
-            {{vb.contentB}}
-            <br>
-            {{vb.contentC}}
-            <br>
-            
-        </p>
-        <div class="slide-pager">
-            <div class="slides">
-                <!--Buttons start-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!--Radio Buttons start-->
-                <!--Images in Slide-->
-                <div class="slide first">
-                     <img src="assets/images/gallery-images/recip VBA.jpg" class="responsive" alt="">
-                </div>
-                <div class="slide">
-                    <img src="assets/images/gallery-images/radical grid.jpg" class="responsive" alt="">
-                </div>
-                <div class="slide">
-                    <img src="assets/images/gallery-images/quad grid.jpg" class="responsive" alt="">
-                </div>
-                <div class="slide">
-                   <img src="assets/images/gallery-images/reciprocal grid.jpg" class="responsive" alt="">
-                </div>
-            </div>
-            <!--Slides Finished-->
-            <!--manuel navigation start-->
-            <div class="navigation-manual">
-                <label for="radio1" class="manuel-btn"></label>
-                <label for="radio2" class="manuel-btn"></label>
-                <label for="radio3" class="manuel-btn"></label>
-                <label for="radio4" class="manuel-btn"></label>
-            </div>   
-            <!--manuel navigation end-->
+      <div id="nav-box"><span></span></div>
+      <nav id="nav-content-pages"></nav>
+
+      <app-navigation></app-navigation>
+    </div>
+  </div>
+  <div class="quote2">
+    <h3>
+      {{ vb.title }}
+      <p>{{ vb.date }}</p>
+    </h3>
+    <a
+      href="https://github.com/MahanSharifi/Math-Calculator-for-Different-Functions"
+      target="_blank"
+      >GitHub Code
+    </a>
+    <p>
+      {{ vb.contentA }}
+      <br />
+      {{ vb.contentB }}
+      <br />
+      {{ vb.contentC }}
+      <br />
+    </p>
+    <div class="slide-pager">
+      <div class="slides">
+        <!--Buttons start-->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <!--Radio Buttons start-->
+        <!--Images in Slide-->
+        <div class="slide first">
+          <img
+            src="assets/images/gallery-images/recip VBA.jpg"
+            class="responsive"
+            alt=""
+          />
         </div>
-        <p class="caption"><br>{{vb.caption}}</p>
-        <!--Slide Pager Finished-->
-        
-</div>
-<!--Visual Basics Finished-->
+        <div class="slide">
+          <img
+            src="assets/images/gallery-images/radical grid.jpg"
+            class="responsive"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="assets/images/gallery-images/quad grid.jpg"
+            class="responsive"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="assets/images/gallery-images/reciprocal grid.jpg"
+            class="responsive"
+            alt=""
+          />
+        </div>
+      </div>
+      <!--Slides Finished-->
+      <!--manuel navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manuel-btn"></label>
+        <label for="radio2" class="manuel-btn"></label>
+        <label for="radio3" class="manuel-btn"></label>
+        <label for="radio4" class="manuel-btn"></label>
+      </div>
+      <!--manuel navigation end-->
+    </div>
+    <p class="caption"><br />{{ vb.caption }}</p>
+    <!--Slide Pager Finished-->
+  </div>
+  <!--Visual Basics Finished-->
 </div>
 
 <router-outlet></router-outlet>

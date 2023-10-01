@@ -8,9 +8,8 @@ describe('BiquadrisComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BiquadrisComponent ]
-    })
-    .compileComponents();
+      declarations: [BiquadrisComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

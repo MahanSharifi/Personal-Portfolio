@@ -1,78 +1,90 @@
 <router-outlet>
+  <section id="about" class="container txt scrollto">
 
-    
-<section id="about" class="container txt scrollto"> 
     <div class="maz">
-        <div class="clearfix">
+      <div class="clearfix">
         <div id="logo">
-            <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page"/>
-            <img src="assets/images/logo-2.png" id="second-logo" alt="Landing Page"/>
+          <img src="assets/images/logo-2.png" id="first-logo" alt="Landing Page" />
         </div>
-        <app-social></app-social>
-        <app-navigation></app-navigation>
-         <div id="nav-box"><span></span></div>
+        <div id="nav-box"><span></span></div>
         <nav id="nav-content-pages"></nav>
-        
-        
-    
-        </div>
-        
-
+        <app-navigation></app-navigation>
       </div>
-      
-    <div class="argument clearfix">
-        <div class="col-about">
-            <div>
-                <h3>{{title.titleText}}</h3>
-                <h2 class="aboutTitle">{{title.titleHeader}}</h2>
-                <p> {{content.data1}}
-                <br>
-                <br>
-                {{content.data2}}
-                <br> 
-                <br>
-                {{content.data3}}
-                </p>
-            </div>
-        </div>
-        <div class="col-about-content">
-            <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.1s">
-                <div class="iconAbout">
-                    <i class="fas fa-university fa-2x"></i>
-                </div>
-                <div>
-                    <h4>{{University.title}}</h4>
-                    <p>{{University.about}}</p>
-                </div>
-            </div>
-            <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.3s">
-                <div class= "iconAbout">
-                    <i class="fas fa-toolbox fa-2x"></i>
-                </div>
-                <div>
-                    <h4>{{tools.title}}</h4>
-                    <p>{{tools.about}}</p>
-                </div>
-            </div>
-            <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.5s">
-                <div class="iconAbout">
-                    <i class="fas fa-futbol fa-2x"></i>
-                </div>
-                <div>
-                    <h4>{{freeTime.title}}</h4>
-                    <p>{{freeTime.about}} <br></p>
-                </div>
-
-            </div>
-            <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.7s">
-                <div class="iconAbout">
-                    <i class="fas fa-code fa-2x"></i>
-                </div>
-                <div>
-                    <h4>{{lang.title}}</h4>
-                    <p>{{lang.about}}</p>
-                </div>
-            </div>
-        </div>
     </div>
-</section>
+
+    <div class="argument clearfix">
+      <div class="col-about">
+        <div>
+          <h3>{{ title.titleText }}</h3>
+          <h2 class="aboutTitle">{{ title.titleHeader }}</h2>
+          <p>
+            {{ content.data1 }}
+            <br />
+            <br />
+            {{ content.data2 }}
+            <br />
+            <br />
+            {{ content.data3 }}
+          </p>
+        </div>
+      </div>
+
+      <div class="col-about-content">
+        <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.1s">
+          <div class="iconAbout">
+            <i class="fas fa-university fa-2x"></i>
+          </div>
+          <div>
+            <h4>{{ University.title }}</h4>
+            <p>{{ University.about }}</p>
+          </div>
+        </div>
+        <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.3s">
+          <div class="iconAbout">
+            <i class="fas fa-toolbox fa-2x"></i>
+          </div>
+          <div>
+            <h4>{{ tools.title }}</h4>
+            <p>{{ tools.about }}</p>
+          </div>
+        </div>
+        <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.5s">
+          <div class="iconAbout">
+            <i class="fas fa-futbol fa-2x"></i>
+          </div>
+          <div>
+            <h4>{{ freeTime.title }}</h4>
+            <p>{{ freeTime.about }} <br /></p>
+          </div>
+        </div>
+        <div class="col-content wow animate__animated animate__pulse quote3" data-wow-delay="0.7s">
+          <div class="iconAbout">
+            <i class="fas fa-code fa-2x"></i>
+          </div>
+          <div>
+            <h4>{{ lang.title }}</h4>
+            <p>{{ lang.about }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <div class="imageGalSlide">
+  <section class="sec2">
+    <div class="slider">
+      <span style="--i:1;"><img src="assets/images/GalleryImages/IMG_1230.JPG" alt=""></span>
+      <span style="--i:2;"><img src="assets/images/GalleryImages/IMG_1236.JPG" alt=""></span>
+      <span style="--i:3;"><img src="assets/images/GalleryImages/IMG_3403.JPG" alt=""></span>
+      <span style="--i:4;"><img src="assets/images/GalleryImages/IMG_1710.JPG" alt=""></span>
+      <span style="--i:5;"><img src="assets/images/GalleryImages/soccer.JPG" alt=""></span>
+      <span style="--i:6;"><img src="assets/images/GalleryImages/IMG_1243.JPG" alt=""></span>
+      <span style="--i:7;"><img src="assets/images/GalleryImages/disp.JPG" alt=""></span>
+      <span style="--i:8;"><img src="assets/images/GalleryImages/golf.JPG" alt=""></span>
+    </div>
+  </section>
+</div>
+
+</router-outlet>

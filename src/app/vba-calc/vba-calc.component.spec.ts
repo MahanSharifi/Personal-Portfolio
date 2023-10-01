@@ -8,9 +8,8 @@ describe('VBACalcComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VBACalcComponent ]
-    })
-    .compileComponents();
+      declarations: [VBACalcComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

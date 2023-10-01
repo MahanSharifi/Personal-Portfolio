@@ -1,71 +1,74 @@
 .coll-Head {
-    width: 50% !important;
-    text-align: center !important;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 5%;
-    
+  width: 50% !important;
+  text-align: center !important;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
 }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; 
-    border-right: .15em solid rebeccapurple; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em; 
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+  border-right: 0.15em solid rebeccapurple;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rebeccapurple }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: rebeccapurple;
+  }
+}
 
 .button {
-    font-size: 16px;
-    margin: 35px 0;
-    padding: 11px 16px;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    transition: .3s;
-    display: inline-block;
-    border-width: 3px;
-    border-style: solid;
-    color: rebeccapurple;
+  font-size: 16px;
+  margin: 35px 0;
+  padding: 11px 16px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  border-width: 3px;
+  border-style: solid;
+  color: rebeccapurple;
 }
 
 .button:hover {
-    transform: translate(0, -10px);
+  transform: translate(0, -10px);
 }
 
-
-[class*='coll-'] {
-    text-align: center;
-   
-
-    
-  
+[class*="coll-"] {
+  text-align: center;
 }
 
-.headSection h1:before{
-    background:rebeccapurple;
-    content:"";
-    display:block;
-    width:30px;
-    height:5.3px;
-    margin-bottom:30px;
+.headSection h1:before {
+  background: rebeccapurple;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5.3px;
+  margin-bottom: 30px;
 }
 
 canvas {
@@ -97,17 +100,6 @@ canvas {
   margin-right: 15px;
 }
 
-
-.maz {
-  overflow: hidden;
-  background-color: White;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100% !important; /* Full width */
-  
-  z-index: 99999999999999;
-}
-
 /* Links inside the navbar */
 .maz a {
   float: left;
@@ -120,7 +112,6 @@ canvas {
 
 /* Change background on mouse-over */
 .maz a:hover {
-  
   color: black;
 }
 
@@ -153,7 +144,7 @@ nav-main {
 
 /*  */
 #nav-main li .fa {
-  transition: .6s;
+  transition: 0.6s;
   line-height: 0px;
 }
 
@@ -166,9 +157,9 @@ nav-main {
   margin: 10px 10px;
   border-radius: 0%;
   text-align: center;
-  line-height: 50px;    
+  line-height: 50px;
   height: 50px;
-  transition: .6s;
+  transition: 0.6s;
 }
 
 #nav-main li a:hover {
@@ -176,30 +167,29 @@ nav-main {
 }
 
 /*  */
-#nav-main li:nth-child(1) a:hover{
-  color: rebeccapurple;  
-}
-/*  */
-#nav-main li:nth-child(2) a:hover{
+#nav-main li:nth-child(1) a:hover {
   color: rebeccapurple;
 }
-
 /*  */
-#nav-main li:nth-child(3) a:hover{
+#nav-main li:nth-child(2) a:hover {
   color: rebeccapurple;
 }
 
 /*  */
-#nav-main li:nth-child(4) a:hover{
+#nav-main li:nth-child(3) a:hover {
   color: rebeccapurple;
 }
 
-#nav-main li:nth-child(5) a:hover{
+/*  */
+#nav-main li:nth-child(4) a:hover {
   color: rebeccapurple;
 }
 
+#nav-main li:nth-child(5) a:hover {
+  color: rebeccapurple;
+}
 
-#nav-main .active { 
+#nav-main .active {
   color: rebeccapurple !important ;
   text-decoration: underline 5px;
 }

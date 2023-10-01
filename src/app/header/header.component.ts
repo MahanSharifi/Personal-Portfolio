@@ -4,17 +4,17 @@ import { ConfigService } from '../config.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
   header = {
-    heading:'',
-    headingText:'',
+    heading: '',
+    headingText: '',
   };
 
-  constructor( public config: ConfigService) { }
+  constructor(public config: ConfigService) {}
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.header = this.config.getConfig().header;
   }
 

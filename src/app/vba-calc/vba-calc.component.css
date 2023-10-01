@@ -1,122 +1,103 @@
-
 .slide-pager {
-    
-    justify-content: center;
-    height: auto;
-    border-radius: 10px;
-    overflow: hidden;
+  justify-content: center;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-
 .slides {
-    width: 500%;
-    height: auto;
-    display: flex;
+  width: 500%;
+  height: auto;
+  display: flex;
 }
 
 .slides input {
-    display:none;
-    
+  display: none;
 }
-
 
 .slide {
-    width: 20%;
-    transition: 2s;
-    
+  width: 20%;
+  transition: 2s;
 }
-
 
 .slide img {
-    max-height:500px;
-    max-width: 500px;
-    position: relative;
-    justify-content: center;
-    margin-left: 350px;
+  max-height: 500px;
+  max-width: 500px;
+  position: relative;
+  justify-content: center;
+  margin-left: 350px;
 }
-
 
 .navigation-manual {
-
-    display: flex;
-    margin-left: 520px;
+  display: flex;
+  margin-left: 520px;
 }
 .navigation-manual label {
-    height: 0.5px;
-    width: 25px;
+  height: 0.5px;
+  width: 25px;
 }
 
 .manuel-btn {
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 1000px;
-    cursor: pointer;
-    transition: 1s;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: 1s;
 }
 
-
 .manuel-btn:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .manuel-btn:hover {
-    background: #0077B5;
+  background: #0077b5;
 }
 
 #radio1:checked ~ .first {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 #radio2:checked ~ .first {
-    margin-left: -20%;
+  margin-left: -20%;
 }
 #radio3:checked ~ .first {
-    margin-left: -40%;
+  margin-left: -40%;
 }
 #radio4:checked ~ .first {
-    margin-left: -60%;
+  margin-left: -60%;
 }
-
-
-
-
 
 .quote2 {
-    background-color: rgb(255, 255, 255);
-    padding: 2em;
-    border-radius: 1em;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
-}
-
-
-.container2 {
-    z-index: 2;
-    background: rgb(255, 255, 255);
-    line-height: 40px;
-    font-weight: lighter;
-    padding: 40px;
-    color: rgb(0, 0, 0);
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+  background-color: rgb(255, 255, 255);
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .container2 {
-    padding: 2em;
-    grid-gap: 2em;
-    padding-top:10em;
-
+  z-index: 2;
+  background: rgb(255, 255, 255);
+  line-height: 40px;
+  font-weight: lighter;
+  padding: 40px;
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
+.container2 {
+  padding: 2em;
+  grid-gap: 2em;
+  padding-top: 10em;
+}
 
 .maz {
   overflow: hidden;
   background-color: White;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 98%; /* Full width */
-  margin-left: -1%;
-  z-index: 99999999999999;
+  position: fixed;
+  top: 0;
+  width: 100.3%;
+  margin-left: -3em;
+  z-index: 1;
 }
 
 /* Links inside the navbar */
@@ -131,7 +112,6 @@
 
 /* Change background on mouse-over */
 .maz a:hover {
-  
   color: black;
 }
 
@@ -164,7 +144,7 @@ nav-main {
 
 /*  */
 #nav-main li .fa {
-  transition: .6s;
+  transition: 0.6s;
   line-height: 0px;
 }
 
@@ -177,9 +157,9 @@ nav-main {
   margin: 10px 10px;
   border-radius: 0%;
   text-align: center;
-  line-height: 50px;    
+  line-height: 50px;
   height: 50px;
-  transition: .6s;
+  transition: 0.6s;
 }
 
 #nav-main li a:hover {
@@ -187,32 +167,29 @@ nav-main {
 }
 
 /*  */
-#nav-main li:nth-child(1) a:hover{
-  color: rebeccapurple;  
-}
-/*  */
-#nav-main li:nth-child(2) a:hover{
+#nav-main li:nth-child(1) a:hover {
   color: rebeccapurple;
 }
-
 /*  */
-#nav-main li:nth-child(3) a:hover{
+#nav-main li:nth-child(2) a:hover {
   color: rebeccapurple;
 }
 
 /*  */
-#nav-main li:nth-child(4) a:hover{
+#nav-main li:nth-child(3) a:hover {
   color: rebeccapurple;
 }
 
-#nav-main li:nth-child(5) a:hover{
+/*  */
+#nav-main li:nth-child(4) a:hover {
   color: rebeccapurple;
 }
 
+#nav-main li:nth-child(5) a:hover {
+  color: rebeccapurple;
+}
 
-#nav-main .active { 
+#nav-main .active {
   color: rebeccapurple !important ;
   text-decoration: underline 5px;
 }
-
-

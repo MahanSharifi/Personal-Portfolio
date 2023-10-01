@@ -4,15 +4,15 @@ import { ConfigService } from '../config.service';
 @Component({
   selector: 'app-volunteer',
   templateUrl: './volunteer.component.html',
-  styleUrls: ['./volunteer.component.css']
+  styleUrls: ['./volunteer.component.css'],
 })
 export class VolunteerComponent implements OnInit {
-  display0 = "none";
-  display = "none";
-  display2 = "none";
-  display3 = "none";
-  display4 = "none";
-  displayNEW= "none";
+  display0 = 'none';
+  display = 'none';
+  display2 = 'none';
+  display3 = 'none';
+  display4 = 'none';
+  displayNEW = 'none';
   displayV = true;
   displayV2 = true;
   displayV3 = true;
@@ -32,55 +32,54 @@ export class VolunteerComponent implements OnInit {
     this.displayV4 = !this.displayV4;
   }
 
-
   openModal0() {
-    this.display0 = "block";
+    this.display0 = 'block';
   }
 
   openModal() {
-    this.display = "block";
+    this.display = 'block';
   }
   openModal2() {
-    this.display2 = "block";
+    this.display2 = 'block';
   }
 
   openModal3() {
-    this.display3 = "block";
+    this.display3 = 'block';
   }
 
   openModal4() {
-    this.display4 = "block";
+    this.display4 = 'block';
   }
 
   openModal5() {
-    this.displayNEW = "block";
-  } 
+    this.displayNEW = 'block';
+  }
   onCloseHandledNew() {
-    this.displayNEW = "none";
+    this.displayNEW = 'none';
   }
 
   onCloseHandled0() {
-    this.display0 = "none";
+    this.display0 = 'none';
   }
   onCloseHandled() {
-    this.display = "none";
+    this.display = 'none';
   }
   onCloseHandled2() {
-    this.display2 = "none";
+    this.display2 = 'none';
   }
 
   onCloseHandled3() {
-    this.display3 = "none";
+    this.display3 = 'none';
   }
 
   onCloseHandled4() {
-    this.display4 = "none";
+    this.display4 = 'none';
   }
 
   tech = {
     title: '',
-    sub: ''
-  }
+    sub: '',
+  };
 
   coop = {
     title: '',
@@ -88,42 +87,41 @@ export class VolunteerComponent implements OnInit {
     contentB: '',
     contentC: '',
     contentD: '',
-    date: ''
-  }
+    date: '',
+  };
 
   youth = {
     title: '',
     date: '',
-    content: ''
-  }
+    content: '',
+  };
 
   robot = {
     title: '',
     date: '',
-    content: ''
-  }
-  
+    content: '',
+  };
+
   deca = {
     title: '',
     date: '',
     content: '',
     contentB: '',
-    contentC: ''
-  }
+    contentC: '',
+  };
 
   football = {
     title: '',
     date: '',
-    content: ''
-  }
+    content: '',
+  };
 
   uptake = {
     title: '',
-    date: ''
-  }
+    date: '',
+  };
 
-  constructor( public config: ConfigService ) { }
-
+  constructor(public config: ConfigService) {}
 
   ngOnInit(): void {
     this.coop = this.config.getConfig().coop;
@@ -134,5 +132,4 @@ export class VolunteerComponent implements OnInit {
     this.football = this.config.getConfig().football;
     this.uptake = this.config.getConfig().uptake;
   }
-
 }

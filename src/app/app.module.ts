@@ -18,12 +18,10 @@ import { VBACalcComponent } from './vba-calc/vba-calc.component';
 import { TechExperiencesComponent } from './tech-experiences/tech-experiences.component';
 import { ApiComponent } from './api/api.component';
 import { GetApiService } from './get-api.service';
-import {HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ProjectsComponent } from './projects/projects.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
-
-
 
 @NgModule({
   declarations: [
@@ -48,16 +46,11 @@ import { VolunteerComponent } from './volunteer/volunteer.component';
 
     AppRoutingModule,
     HttpClientModule,
-    
-    RouterModule.forRoot([
-    ])
-    
+
+    RouterModule.forRoot([]),
   ],
-  
-  providers: [
-    ConfigService,
-    GetApiService
-  ],
-  bootstrap: [AppComponent]
+
+  providers: [ConfigService, GetApiService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
