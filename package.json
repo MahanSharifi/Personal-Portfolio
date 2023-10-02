@@ -12,14 +12,14 @@
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
-    "@angular/animations": "~15.2.9",
-    "@angular/common": "~15.2.9",
-    "@angular/compiler": "~15.2.9",
-    "@angular/core": "~15.2.9",
-    "@angular/forms": "~15.2.9",
-    "@angular/platform-browser": "~15.2.9",
-    "@angular/platform-browser-dynamic": "~15.2.9",
-    "@angular/router": "~15.2.9",
+    "@angular/animations": "~16.2.7",
+    "@angular/common": "~16.2.7",
+    "@angular/compiler": "~16.2.7",
+    "@angular/core": "~16.2.7",
+    "@angular/forms": "~16.2.7",
+    "@angular/platform-browser": "~16.2.7",
+    "@angular/platform-browser-dynamic": "~16.2.7",
+    "@angular/router": "~16.2.7",
     "@gooddata/react-components": "^7.9.1",
     "@ng-bootstrap/ng-bootstrap": "^11.0.0",
     "@types/three": "^0.141.0",
@@ -39,7 +39,7 @@
     "tsparticles": "^2.7.1",
     "tsparticles-engine": "^2.7.1",
     "uuid": "^8.3.2",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.13.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.4",
