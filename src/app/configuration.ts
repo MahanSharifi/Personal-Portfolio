@@ -49,7 +49,7 @@ export const configuration = {
   content: {
     data1:
       'What do you want to know?',
-    data2: 'I like pineapple on pizza, take what you will with that information. I also like coding, not as much as sports though :/... or maybe not, who knows.',
+    data2: 'Bogosort is my favourite sorting algorithm',
     data3:
       'For my resume, please contact me via any of the social icons above, or email.',
   },

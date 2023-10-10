@@ -177,8 +177,8 @@ nav-main {
 
 .slider{
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   transform-style: preserve-3d;
   animation: rotate 30s linear infinite;
 }
